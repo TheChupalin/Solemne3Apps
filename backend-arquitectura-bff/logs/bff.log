@@ -1,0 +1,777 @@
+2026-06-29 12:29:13.199  INFO 7868 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.4.1 on DESKTOP-RAHI7KJ with PID 7868 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff)
+2026-06-29 12:29:13.204  INFO 7868 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-29 12:29:13.842  INFO 7868 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4ede8b8-08d9-3bbc-8293-3a4a43da3d41
+2026-06-29 12:29:14.024  INFO 7868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-29 12:29:14.031  INFO 7868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-29 12:29:14.031  INFO 7868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-29 12:29:14.111  INFO 7868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-29 12:29:14.112  INFO 7868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 876 ms
+2026-06-29 12:29:14.251  INFO 7868 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 12:29:14.286  INFO 7868 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 12:29:14.624  INFO 7868 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-29 12:29:14.748  WARN 7868 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-29 12:29:14.789  INFO 7868 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-29 12:29:14.818  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-29 12:29:14.822  INFO 7868 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 12:29:14.838  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-29 12:29:14.839  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-29 12:29:14.839  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-29 12:29:14.839  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-29 12:29:14.839  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-29 12:29:14.839  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-29 12:29:14.839  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-29 12:29:15.074  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-29 12:29:15.076  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-29 12:29:15.078  INFO 7868 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-29 12:29:15.081  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782750555081 with initial instances count: 1
+2026-06-29 12:29:15.082  INFO 7868 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-29 12:29:15.083  INFO 7868 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782750555083, current=UP, previous=STARTING]
+2026-06-29 12:29:15.084  INFO 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:6faa4cd8-8734-49ea-96f6-da1278bdce1d: registering service...
+2026-06-29 12:29:15.099  INFO 7868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-29 12:29:15.099  INFO 7868 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-29 12:29:15.110  INFO 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:6faa4cd8-8734-49ea-96f6-da1278bdce1d - registration status: 204
+2026-06-29 12:29:15.194  INFO 7868 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.381 seconds (JVM running for 2.871)
+2026-06-29 12:30:08.182  INFO 7868 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 12:30:08.182  INFO 7868 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-29 12:30:08.183  INFO 7868 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-29 12:30:21.630  WARN 7868 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2026-06-29 12:30:44.755  INFO 7868 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-29 12:30:44.756  INFO 7868 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-29 12:30:58.963  INFO 7868 --- [http-nio-8083-exec-4] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 12:30:58.963  INFO 7868 --- [http-nio-8083-exec-4] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 12:33:52.291  INFO 7868 --- [http-nio-8083-exec-10] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 12:33:52.291  INFO 7868 --- [http-nio-8083-exec-10] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 12:34:14.843  INFO 7868 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 12:39:14.852  INFO 7868 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 12:44:16.232  INFO 7868 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 12:49:16.248  INFO 7868 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 12:54:16.259  INFO 7868 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 12:59:16.261  INFO 7868 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 13:00:04.864  INFO 7868 --- [RMI TCP Connection(40)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-06-29 13:00:04.865  INFO 7868 --- [RMI TCP Connection(40)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BFF with eureka with status DOWN
+2026-06-29 13:00:04.865  INFO 7868 --- [RMI TCP Connection(40)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782752404865, current=DOWN, previous=UP]
+2026-06-29 13:00:04.865  INFO 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:6faa4cd8-8734-49ea-96f6-da1278bdce1d: registering service...
+2026-06-29 13:00:04.872  INFO 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BFF": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BFF": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 34 more
+
+2026-06-29 13:00:04.872  WARN 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BFF": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2026-06-29 13:00:04.879  INFO 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BFF": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BFF": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2026-06-29 13:00:04.879  WARN 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BFF": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2026-06-29 13:00:04.882  WARN 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:6faa4cd8-8734-49ea-96f6-da1278bdce1d - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2026-06-29 13:00:04.882  WARN 7868 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2026-06-29 13:00:04.883  INFO 7868 --- [RMI TCP Connection(40)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-29 13:00:07.890  INFO 7868 --- [RMI TCP Connection(40)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-29 13:00:07.894  INFO 7868 --- [RMI TCP Connection(40)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/BFF/BFF:6faa4cd8-8734-49ea-96f6-da1278bdce1d": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BFF/BFF:6faa4cd8-8734-49ea-96f6-da1278bdce1d": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:196)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:189)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 75 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 88 more
+
+2026-06-29 13:00:07.894  WARN 7868 --- [RMI TCP Connection(40)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BFF/BFF:6faa4cd8-8734-49ea-96f6-da1278bdce1d": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2026-06-29 13:00:07.895 ERROR 7868 --- [RMI TCP Connection(40)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:6faa4cd8-8734-49ea-96f6-da1278bdce1d - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:196) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:189) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390) ~[spring-cloud-context-3.0.5.jar:3.0.5]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172) ~[spring-boot-2.5.9.jar:2.5.9]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-2.5.9.jar:2.5.9]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72) ~[na:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor64.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2026-06-29 13:00:07.898  INFO 7868 --- [RMI TCP Connection(40)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-29 14:14:41.624  INFO 19240 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.4.1 on DESKTOP-RAHI7KJ with PID 19240 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff)
+2026-06-29 14:14:41.626  INFO 19240 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-29 14:14:42.191  INFO 19240 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4ede8b8-08d9-3bbc-8293-3a4a43da3d41
+2026-06-29 14:14:42.378  INFO 19240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-29 14:14:42.384  INFO 19240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-29 14:14:42.385  INFO 19240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-29 14:14:42.463  INFO 19240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-29 14:14:42.463  INFO 19240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 805 ms
+2026-06-29 14:14:42.599  INFO 19240 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 14:14:42.635  INFO 19240 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 14:14:42.979  INFO 19240 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-29 14:14:43.110  WARN 19240 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-29 14:14:43.148  INFO 19240 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-29 14:14:43.173  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-29 14:14:43.177  INFO 19240 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 14:14:43.192  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-29 14:14:43.192  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-29 14:14:43.192  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-29 14:14:43.192  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-29 14:14:43.192  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-29 14:14:43.193  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-29 14:14:43.193  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-29 14:14:43.430  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-29 14:14:43.432  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-29 14:14:43.434  INFO 19240 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-29 14:14:43.437  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782756883436 with initial instances count: 2
+2026-06-29 14:14:43.437  INFO 19240 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-29 14:14:43.438  INFO 19240 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782756883438, current=UP, previous=STARTING]
+2026-06-29 14:14:43.439  INFO 19240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:0967e016-8144-409a-a9f5-a2d0b99e40a2: registering service...
+2026-06-29 14:14:43.454  INFO 19240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-29 14:14:43.454  INFO 19240 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-29 14:14:43.464  INFO 19240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:0967e016-8144-409a-a9f5-a2d0b99e40a2 - registration status: 204
+2026-06-29 14:14:43.548  INFO 19240 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.301 seconds (JVM running for 2.789)
+2026-06-29 14:15:26.853  INFO 19240 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 14:15:26.853  INFO 19240 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-29 14:15:26.854  INFO 19240 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-29 14:16:23.992  INFO 19240 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 14:16:23.992  INFO 19240 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 14:19:43.203  INFO 19240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 14:19:54.065  INFO 19240 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-06-29 14:19:54.066  INFO 19240 --- [RMI TCP Connection(13)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BFF with eureka with status DOWN
+2026-06-29 14:19:54.066  INFO 19240 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782757194066, current=DOWN, previous=UP]
+2026-06-29 14:19:54.066  INFO 19240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:0967e016-8144-409a-a9f5-a2d0b99e40a2: registering service...
+2026-06-29 14:19:54.071  INFO 19240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:0967e016-8144-409a-a9f5-a2d0b99e40a2 - registration status: 204
+2026-06-29 14:19:54.085  INFO 19240 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-29 14:19:57.087  INFO 19240 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-29 14:19:57.092  INFO 19240 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:0967e016-8144-409a-a9f5-a2d0b99e40a2 - deregister  status: 200
+2026-06-29 14:19:57.095  INFO 19240 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-29 14:40:52.671  INFO 12132 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on DESKTOP-RAHI7KJ with PID 12132 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff)
+2026-06-29 14:40:52.674  INFO 12132 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-29 14:40:53.365  INFO 12132 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4ede8b8-08d9-3bbc-8293-3a4a43da3d41
+2026-06-29 14:40:53.631  INFO 12132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-29 14:40:53.639  INFO 12132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-29 14:40:53.639  INFO 12132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-29 14:40:53.733  INFO 12132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-29 14:40:53.733  INFO 12132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1006 ms
+2026-06-29 14:40:53.930  INFO 12132 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 14:40:53.990  INFO 12132 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 14:40:54.456  INFO 12132 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-29 14:40:54.627  WARN 12132 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-29 14:40:54.692  INFO 12132 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-29 14:40:54.726  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-29 14:40:54.730  INFO 12132 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 14:40:54.754  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-29 14:40:54.755  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-29 14:40:54.755  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-29 14:40:54.755  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-29 14:40:54.755  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-29 14:40:54.756  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-29 14:40:54.756  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-29 14:40:55.047  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-29 14:40:55.049  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-29 14:40:55.051  INFO 12132 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-29 14:40:55.056  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782758455055 with initial instances count: 1
+2026-06-29 14:40:55.058  INFO 12132 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-29 14:40:55.059  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782758455059, current=UP, previous=STARTING]
+2026-06-29 14:40:55.060  INFO 12132 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:4a07abf1-fda6-410f-8d26-2a73474615f6: registering service...
+2026-06-29 14:40:55.100  INFO 12132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-29 14:40:55.101  INFO 12132 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-29 14:40:55.117  INFO 12132 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:4a07abf1-fda6-410f-8d26-2a73474615f6 - registration status: 204
+2026-06-29 14:40:55.210  INFO 12132 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.963 seconds (JVM running for 3.407)
+2026-06-29 14:41:25.615  INFO 12132 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 14:41:25.615  INFO 12132 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-29 14:41:25.616  INFO 12132 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-29 14:41:25.639  INFO 12132 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findById/{id}
+2026-06-29 14:41:25.639  INFO 12132 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findById() id: 3
+2026-06-29 14:41:25.820 ERROR 12132 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/3] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T18:41:25.803+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/3"}]
+2026-06-29 14:41:25.821 ERROR 12132 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/3] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T18:41:25.803+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/3"}]
+2026-06-29 14:41:42.941  INFO 12132 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findById/{id}
+2026-06-29 14:41:42.942  INFO 12132 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findById() id: 3
+2026-06-29 14:41:42.949 ERROR 12132 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/3] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T18:41:42.947+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/3"}]
+2026-06-29 14:41:42.949 ERROR 12132 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/3] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T18:41:42.947+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/3"}]
+2026-06-29 14:42:07.091  INFO 12132 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findById/{id}
+2026-06-29 14:42:07.092  INFO 12132 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findById() id: 3
+2026-06-29 14:42:07.098 ERROR 12132 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/3] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T18:42:07.097+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/3"}]
+2026-06-29 14:42:07.099 ERROR 12132 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/3] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T18:42:07.097+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/3"}]
+2026-06-29 14:42:39.029  INFO 12132 --- [http-nio-8083-exec-4] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 14:42:39.030  INFO 12132 --- [http-nio-8083-exec-4] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 14:42:49.491  INFO 12132 --- [http-nio-8083-exec-5] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findById/{id}
+2026-06-29 14:42:49.491  INFO 12132 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findById() id: 3
+2026-06-29 14:42:49.498 ERROR 12132 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/3] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T18:42:49.497+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/3"}]
+2026-06-29 14:42:49.499 ERROR 12132 --- [http-nio-8083-exec-5] c.m.b.c.BffM2ProductoController          : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/3] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T18:42:49.497+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/3"}]
+2026-06-29 14:42:59.053  INFO 12132 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findById/{id}
+2026-06-29 14:42:59.053  INFO 12132 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findById() id: 3
+2026-06-29 14:42:59.175 ERROR 12132 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : findById HttpStatus=204 NO_CONTENT categoriaProductoService.findById
+2026-06-29 14:43:04.756  INFO 12132 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findById/{id}
+2026-06-29 14:43:04.756  INFO 12132 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findById() id: 2
+2026-06-29 14:43:40.537  INFO 12132 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/create
+2026-06-29 14:43:40.538  INFO 12132 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl create() categoriaProductoDTO: CategoriaProductoDTO(id=3, nombre=Camas para Perros y Gatos, descripcion=Camas)
+2026-06-29 14:43:40.603 ERROR 12132 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : create HttpStatus=201 CREATED categoriaProductoService.create
+2026-06-29 14:44:04.590  INFO 12132 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/create
+2026-06-29 14:44:04.590  INFO 12132 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl create() categoriaProductoDTO: CategoriaProductoDTO(id=3, nombre=Camas para Perros y Gatos, descripcion=Camas)
+2026-06-29 14:44:04.613 ERROR 12132 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : create HttpStatus=201 CREATED categoriaProductoService.create
+2026-06-29 14:45:54.761  INFO 12132 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 14:50:08.240  INFO 12132 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-29 14:50:08.241  INFO 12132 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-29 14:50:54.765  INFO 12132 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 14:55:54.781  INFO 12132 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 15:25:48.502  INFO 8576 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on DESKTOP-RAHI7KJ with PID 8576 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff)
+2026-06-29 15:25:48.505  INFO 8576 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-29 15:25:49.199  INFO 8576 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4ede8b8-08d9-3bbc-8293-3a4a43da3d41
+2026-06-29 15:25:49.482  INFO 8576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-29 15:25:49.490  INFO 8576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-29 15:25:49.490  INFO 8576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-29 15:25:49.588  INFO 8576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-29 15:25:49.588  INFO 8576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2026-06-29 15:25:49.805  INFO 8576 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 15:25:49.860  INFO 8576 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 15:25:50.284  INFO 8576 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-29 15:25:50.436  WARN 8576 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-29 15:25:50.487  INFO 8576 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-29 15:25:50.520  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-29 15:25:50.526  INFO 8576 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 15:25:50.559  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-29 15:25:50.561  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-29 15:25:50.561  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-29 15:25:50.562  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-29 15:25:50.562  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-29 15:25:50.564  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-29 15:25:50.565  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-29 15:25:50.922  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-29 15:25:50.926  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-29 15:25:50.933  INFO 8576 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-29 15:25:50.939  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782761150938 with initial instances count: 2
+2026-06-29 15:25:50.941  INFO 8576 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-29 15:25:50.942  INFO 8576 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782761150942, current=UP, previous=STARTING]
+2026-06-29 15:25:50.943  INFO 8576 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:4e90c741-b557-4f20-af1b-42ce7a3d62ac: registering service...
+2026-06-29 15:25:50.974  INFO 8576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-29 15:25:50.975  INFO 8576 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-29 15:25:50.987  INFO 8576 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:4e90c741-b557-4f20-af1b-42ce7a3d62ac - registration status: 204
+2026-06-29 15:25:51.081  INFO 8576 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 3.026 seconds (JVM running for 3.468)
+2026-06-29 15:30:50.574  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 15:31:53.896  INFO 8576 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 15:31:53.897  INFO 8576 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-29 15:31:53.898  INFO 8576 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-29 15:31:53.916  INFO 8576 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 15:31:53.917  INFO 8576 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 15:32:01.743  WARN 8576 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-29 15:32:35.441  INFO 8576 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-29 15:32:35.442  INFO 8576 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-29 15:32:44.608  INFO 8576 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/create
+2026-06-29 15:32:44.609  INFO 8576 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl create() categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros, descripcion=Cama grande)
+2026-06-29 15:32:44.673 ERROR 8576 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : create HttpStatus=201 CREATED categoriaProductoService.create
+2026-06-29 15:32:48.039  INFO 8576 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/create
+2026-06-29 15:32:48.040  INFO 8576 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl create() categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros, descripcion=Cama grande)
+2026-06-29 15:32:48.053 ERROR 8576 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : create HttpStatus=201 CREATED categoriaProductoService.create
+2026-06-29 15:35:50.580  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 15:40:50.596  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 15:45:50.601  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 15:50:50.610  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 15:55:50.617  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 15:56:14.950  INFO 8576 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/create
+2026-06-29 15:56:14.950  INFO 8576 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl create() categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros, descripcion=Cama grande)
+2026-06-29 15:56:14.960 ERROR 8576 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : create HttpStatus=201 CREATED categoriaProductoService.create
+2026-06-29 15:56:39.223  INFO 8576 --- [http-nio-8083-exec-7] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/create
+2026-06-29 15:56:39.224  INFO 8576 --- [http-nio-8083-exec-7] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl create
+2026-06-29 16:00:50.629  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:01:05.881  INFO 8576 --- [http-nio-8083-exec-9] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 16:01:05.882  INFO 8576 --- [http-nio-8083-exec-9] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 16:02:24.172  WARN 8576 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-29 16:05:50.643  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:05:56.357  INFO 8576 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findById/{id}
+2026-06-29 16:05:56.358  INFO 8576 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findById() id: 2
+2026-06-29 16:05:56.378 ERROR 8576 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/2] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T20:05:56.370+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/2"}]
+2026-06-29 16:05:56.379 ERROR 8576 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : findById [404] during [GET] to [http://microservicio2/api/microservicio2/ProductofindById/2] [IBffMicroServicio2Client#findById(long)]: [{"timestamp":"2026-06-29T20:05:56.370+00:00","status":404,"error":"Not Found","path":"/api/microservicio2/ProductofindById/2"}]
+2026-06-29 16:09:34.730  INFO 8576 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findById/{id}
+2026-06-29 16:09:34.731  INFO 8576 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findById() id: 2
+2026-06-29 16:10:50.648  INFO 8576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:10:58.939  INFO 15812 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on DESKTOP-RAHI7KJ with PID 15812 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff)
+2026-06-29 16:10:58.942  INFO 15812 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-29 16:10:59.607  INFO 15812 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4ede8b8-08d9-3bbc-8293-3a4a43da3d41
+2026-06-29 16:10:59.877  INFO 15812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-29 16:10:59.886  INFO 15812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-29 16:10:59.886  INFO 15812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-29 16:10:59.978  INFO 15812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-29 16:10:59.979  INFO 15812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
+2026-06-29 16:11:00.193  INFO 15812 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 16:11:00.255  INFO 15812 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 16:11:00.721  INFO 15812 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-29 16:11:00.881  WARN 15812 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-29 16:11:00.936  INFO 15812 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-29 16:11:00.969  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-29 16:11:00.974  INFO 15812 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:11:00.996  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-29 16:11:00.997  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-29 16:11:00.997  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-29 16:11:00.998  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-29 16:11:00.998  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-29 16:11:00.998  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-29 16:11:00.998  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-29 16:11:01.294  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-29 16:11:01.298  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-29 16:11:01.300  INFO 15812 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-29 16:11:01.306  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782763861306 with initial instances count: 4
+2026-06-29 16:11:01.308  INFO 15812 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-29 16:11:01.310  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782763861309, current=UP, previous=STARTING]
+2026-06-29 16:11:01.311  INFO 15812 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:92bf7afc-ce58-4acc-865f-02bb26d5de2a: registering service...
+2026-06-29 16:11:01.336  INFO 15812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-29 16:11:01.337  INFO 15812 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-29 16:11:01.350  INFO 15812 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:92bf7afc-ce58-4acc-865f-02bb26d5de2a - registration status: 204
+2026-06-29 16:11:01.456  INFO 15812 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.95 seconds (JVM running for 3.421)
+2026-06-29 16:11:26.724  INFO 15812 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 16:11:26.725  INFO 15812 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-29 16:11:26.725  INFO 15812 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-29 16:11:26.747  INFO 15812 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findById/{id}
+2026-06-29 16:11:26.748  INFO 15812 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findById() id: 2
+2026-06-29 16:11:32.444  INFO 15812 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findById/{id}
+2026-06-29 16:11:32.445  INFO 15812 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findById() id: 5
+2026-06-29 16:11:52.482  INFO 15812 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/create
+2026-06-29 16:11:52.482  INFO 15812 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl create
+2026-06-29 16:12:04.060  INFO 15812 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-29 16:12:04.061  INFO 15812 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-29 16:12:51.392  WARN 15812 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-29 16:13:02.202  INFO 15812 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-29 16:13:02.203  INFO 15812 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-29 16:13:56.040  WARN 15812 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-29 16:14:12.203  INFO 15812 --- [http-nio-8083-exec-8] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/create
+2026-06-29 16:14:12.204  INFO 15812 --- [http-nio-8083-exec-8] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl create
+2026-06-29 16:14:16.317  INFO 15812 --- [http-nio-8083-exec-9] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 16:14:16.318  INFO 15812 --- [http-nio-8083-exec-9] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 16:16:01.009  INFO 15812 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:19:36.038  INFO 15812 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/delete/{id}
+2026-06-29 16:19:36.039  INFO 15812 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl deleteById() id: 4
+2026-06-29 16:20:05.745  INFO 15812 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-29 16:20:05.745  INFO 15812 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-29 16:20:10.427  INFO 15812 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/delete/{id}
+2026-06-29 16:20:10.428  INFO 15812 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl deleteById() id: 5
+2026-06-29 16:20:12.842  INFO 15812 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-29 16:20:12.842  INFO 15812 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-29 16:20:50.931  INFO 15812 --- [http-nio-8083-exec-5] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/delete/{id}
+2026-06-29 16:20:50.932  INFO 15812 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl deleteById() id: 6
+2026-06-29 16:20:54.947  INFO 15812 --- [http-nio-8083-exec-6] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/delete/{id}
+2026-06-29 16:20:54.947  INFO 15812 --- [http-nio-8083-exec-6] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl deleteById() id: 5
+2026-06-29 16:21:01.023  INFO 15812 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:21:56.074  INFO 15812 --- [http-nio-8083-exec-8] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 16:21:56.075  INFO 15812 --- [http-nio-8083-exec-8] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 16:22:17.250  INFO 15812 --- [http-nio-8083-exec-9] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/update/{id}
+2026-06-29 16:22:17.256  INFO 15812 --- [http-nio-8083-exec-9] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl update() id: 4 productoDTO: ProductoDTO(id=4, nombre=Cojin gato, descripcion=Cojin para gatos, precio=10000.0, stock=19, idCategoria=2)
+2026-06-29 16:22:22.127  INFO 15812 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-29 16:22:22.128  INFO 15812 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-29 16:22:28.057  INFO 15812 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 16:22:28.058  INFO 15812 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 16:26:01.029  INFO 15812 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:28:25.081  INFO 17260 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on DESKTOP-RAHI7KJ with PID 17260 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff)
+2026-06-29 16:28:25.084  INFO 17260 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-29 16:28:25.755  INFO 17260 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4ede8b8-08d9-3bbc-8293-3a4a43da3d41
+2026-06-29 16:28:26.029  INFO 17260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-29 16:28:26.041  INFO 17260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-29 16:28:26.041  INFO 17260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-29 16:28:26.136  INFO 17260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-29 16:28:26.137  INFO 17260 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1010 ms
+2026-06-29 16:28:26.326  INFO 17260 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 16:28:26.378  INFO 17260 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 16:28:26.781  INFO 17260 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-29 16:28:26.928  WARN 17260 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-29 16:28:26.975  INFO 17260 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-29 16:28:27.009  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-29 16:28:27.014  INFO 17260 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:28:27.040  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-29 16:28:27.041  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-29 16:28:27.041  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-29 16:28:27.041  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-29 16:28:27.041  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-29 16:28:27.042  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-29 16:28:27.042  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-29 16:28:27.379  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-29 16:28:27.382  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-29 16:28:27.386  INFO 17260 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-29 16:28:27.391  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782764907391 with initial instances count: 4
+2026-06-29 16:28:27.393  INFO 17260 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-29 16:28:27.393  INFO 17260 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782764907393, current=UP, previous=STARTING]
+2026-06-29 16:28:27.395  INFO 17260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:df2c9275-d120-4166-ab86-025d19107772: registering service...
+2026-06-29 16:28:27.424  INFO 17260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-29 16:28:27.425  INFO 17260 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-29 16:28:27.433  INFO 17260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:df2c9275-d120-4166-ab86-025d19107772 - registration status: 204
+2026-06-29 16:28:27.526  INFO 17260 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.869 seconds (JVM running for 3.316)
+2026-06-29 16:29:33.510  INFO 17260 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 16:29:33.510  INFO 17260 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-29 16:29:33.511  INFO 17260 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-29 16:29:33.535  WARN 17260 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+2026-06-29 16:30:28.290  INFO 17260 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 16:30:28.290  INFO 17260 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 16:30:39.454  WARN 17260 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+2026-06-29 16:32:00.037  WARN 17260 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+2026-06-29 16:32:04.395  WARN 17260 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+2026-06-29 16:32:49.807  INFO 17260 --- [http-nio-8083-exec-7] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/create
+2026-06-29 16:32:49.807  INFO 17260 --- [http-nio-8083-exec-7] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl create
+2026-06-29 16:32:49.828 ERROR 17260 --- [http-nio-8083-exec-7] c.m.bff.service.BffProductoServiceImpl   : create La categoria con id=10 no existe
+2026-06-29 16:32:49.829 ERROR 17260 --- [http-nio-8083-exec-7] c.m.bff.service.BffProductoServiceImpl   : create La categoria con id=10 no existe
+2026-06-29 16:32:49.830 ERROR 17260 --- [http-nio-8083-exec-7] c.m.b.c.BffM2ProductoController          : create La categoria con id=10 no existe
+2026-06-29 16:32:59.203  INFO 17260 --- [http-nio-8083-exec-8] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/create
+2026-06-29 16:32:59.204  INFO 17260 --- [http-nio-8083-exec-8] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl create
+2026-06-29 16:33:07.720  INFO 17260 --- [http-nio-8083-exec-9] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 16:33:07.720  INFO 17260 --- [http-nio-8083-exec-9] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 16:33:23.217  INFO 17260 --- [http-nio-8083-exec-10] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/delete/{id}
+2026-06-29 16:33:23.218  INFO 17260 --- [http-nio-8083-exec-10] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl deleteById() id: 7
+2026-06-29 16:33:27.044  INFO 17260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:33:27.586  INFO 17260 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 16:33:27.586  INFO 17260 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 16:33:34.277  INFO 17260 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/create
+2026-06-29 16:33:34.277  INFO 17260 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl create
+2026-06-29 16:33:34.285 ERROR 17260 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : create La categoria con id=10 no existe
+2026-06-29 16:33:34.285 ERROR 17260 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : create La categoria con id=10 no existe
+2026-06-29 16:33:34.286 ERROR 17260 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : create La categoria con id=10 no existe
+2026-06-29 16:38:27.050  INFO 17260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:43:27.060  INFO 17260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:48:27.066  INFO 17260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:53:27.068  INFO 17260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 16:58:27.071  INFO 17260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 17:03:27.085  INFO 17260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 17:05:32.145  INFO 12244 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on DESKTOP-RAHI7KJ with PID 12244 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff)
+2026-06-29 17:05:32.149  INFO 12244 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-29 17:05:32.834  INFO 12244 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-29 17:05:33.095  INFO 12244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-29 17:05:33.104  INFO 12244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-29 17:05:33.105  INFO 12244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-29 17:05:33.202  INFO 12244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-29 17:05:33.202  INFO 12244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1008 ms
+2026-06-29 17:05:33.399  INFO 12244 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 17:05:33.473  INFO 12244 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 17:05:33.886  INFO 12244 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-29 17:05:34.047  WARN 12244 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-29 17:05:34.099  INFO 12244 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-29 17:05:34.130  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-29 17:05:34.134  INFO 12244 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 17:05:34.157  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-29 17:05:34.158  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-29 17:05:34.158  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-29 17:05:34.158  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-29 17:05:34.159  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-29 17:05:34.159  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-29 17:05:34.159  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-29 17:05:34.467  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-29 17:05:34.469  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-29 17:05:34.474  INFO 12244 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-29 17:05:34.479  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782767134478 with initial instances count: 4
+2026-06-29 17:05:34.481  INFO 12244 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-29 17:05:34.482  INFO 12244 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782767134482, current=UP, previous=STARTING]
+2026-06-29 17:05:34.484  INFO 12244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:24ff57f9-8c6b-4476-a9ab-0d44dd5a464a: registering service...
+2026-06-29 17:05:34.515  INFO 12244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-29 17:05:34.515  INFO 12244 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-29 17:05:34.522  INFO 12244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:24ff57f9-8c6b-4476-a9ab-0d44dd5a464a - registration status: 204
+2026-06-29 17:05:34.611  INFO 12244 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.903 seconds (JVM running for 3.361)
+2026-06-29 17:06:52.499  INFO 12244 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 17:06:52.499  INFO 12244 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-29 17:06:52.500  INFO 12244 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-29 17:06:52.516  INFO 12244 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-29 17:06:52.517  INFO 12244 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-29 17:19:03.707  INFO 7928 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on DESKTOP-RAHI7KJ with PID 7928 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-arquitectura-bff)
+2026-06-29 17:19:03.710  INFO 7928 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-29 17:19:04.369  INFO 7928 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-29 17:19:04.644  INFO 7928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-29 17:19:04.653  INFO 7928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-29 17:19:04.654  INFO 7928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-29 17:19:04.746  INFO 7928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-29 17:19:04.746  INFO 7928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 996 ms
+2026-06-29 17:19:04.942  INFO 7928 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 17:19:05.012  INFO 7928 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-29 17:19:05.450  INFO 7928 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-29 17:19:05.595  WARN 7928 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-29 17:19:05.644  INFO 7928 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-29 17:19:05.681  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-29 17:19:05.686  INFO 7928 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-29 17:19:05.705  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-29 17:19:05.705  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-29 17:19:05.706  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-29 17:19:05.706  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-29 17:19:05.706  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-29 17:19:05.707  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-29 17:19:05.707  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-29 17:19:05.987  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-29 17:19:05.990  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-29 17:19:05.992  INFO 7928 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-29 17:19:05.997  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782767945996 with initial instances count: 2
+2026-06-29 17:19:05.998  INFO 7928 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-29 17:19:06.000  INFO 7928 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782767946000, current=UP, previous=STARTING]
+2026-06-29 17:19:06.002  INFO 7928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:0967364b-6303-4d28-bfeb-d0a6b1c1ab1f: registering service...
+2026-06-29 17:19:06.034  INFO 7928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-29 17:19:06.035  INFO 7928 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-29 17:19:06.042  INFO 7928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:0967364b-6303-4d28-bfeb-d0a6b1c1ab1f - registration status: 204
+2026-06-29 17:19:06.132  INFO 7928 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.894 seconds (JVM running for 3.347)
+2026-06-29 17:21:33.571  INFO 7928 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 17:21:33.571  INFO 7928 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-29 17:21:33.572  INFO 7928 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-29 17:21:33.591  INFO 7928 --- [http-nio-8083-exec-1] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-uf id=4
+2026-06-29 17:21:33.591  INFO 7928 --- [http-nio-8083-exec-1] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnUf() idProducto: 4

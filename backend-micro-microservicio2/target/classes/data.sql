@@ -1,0 +1,4 @@
+insert into producto (id, nombre, descripcion, precio, stock, id_categoria) values (1, 'Champion Dog 15kg', 'Alimento para perros', 20000, 50, 1) ON CONFLICT (id) DO NOTHING;
+insert into producto (id, nombre, descripcion, precio, stock, id_categoria) values (2, 'Master Cat 20kg', 'Alimento para gatos', 24000, 45, 1) ON CONFLICT (id) DO NOTHING;
+insert into producto (id, nombre, descripcion, precio, stock, id_categoria) values (3, 'Cojin perro', 'Cojin para perros', 12000, 20, 2) ON CONFLICT (id) DO NOTHING;
+insert into producto (id, nombre, descripcion, precio, stock, id_categoria) values (4, 'Cojin gato', 'Cojin para gatos', 10000, 20, 2) ON CONFLICT (id) DO NOTHING;

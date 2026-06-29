@@ -1,0 +1,92 @@
+2026-06-28 16:53:18.394  INFO 3392 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.4.1 on DESKTOP-RAHI7KJ with PID 3392 (C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-micro-microservicio1\target\classes started by Lester in C:\Users\Lester\Documents\Taeritas\Semestre 7\Aplicaciones y tecnologias de la web\microservicio1-eureka-gateway\backend-micro-microservicio1)
+2026-06-28 16:53:18.396  INFO 3392 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-28 16:53:18.912  INFO 3392 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28 16:53:19.031  INFO 3392 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interfaces.
+2026-06-28 16:53:19.194  INFO 3392 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-28 16:53:19.463  INFO 3392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-28 16:53:19.470  INFO 3392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-28 16:53:19.471  INFO 3392 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-28 16:53:19.567  INFO 3392 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-28 16:53:19.567  INFO 3392 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1135 ms
+2026-06-28 16:53:19.710  INFO 3392 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28 16:53:19.767  INFO 3392 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-28 16:53:19.903  INFO 3392 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-28 16:53:20.000  INFO 3392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28 16:53:20.152  INFO 3392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28 16:53:20.169  INFO 3392 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-28 16:53:20.709  INFO 3392 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-28 16:53:20.717  INFO 3392 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28 16:53:20.916  WARN 3392 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28 16:53:21.330  INFO 3392 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-28 16:53:21.500  WARN 3392 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-28 16:53:21.555  INFO 3392 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-28 16:53:21.584  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-28 16:53:21.588  INFO 3392 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 16:53:21.607  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-28 16:53:21.607  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-28 16:53:21.607  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-28 16:53:21.607  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-28 16:53:21.608  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-28 16:53:21.608  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-28 16:53:21.608  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-28 16:53:22.020  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-28 16:53:22.021  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-28 16:53:22.023  INFO 3392 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-28 16:53:22.027  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782680002026 with initial instances count: 0
+2026-06-28 16:53:22.028  INFO 3392 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-28 16:53:22.029  INFO 3392 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782680002029, current=UP, previous=STARTING]
+2026-06-28 16:53:22.030  INFO 3392 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:180f69cb-6857-4ad3-8b99-488768395567: registering service...
+2026-06-28 16:53:22.051  INFO 3392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-28 16:53:22.052  INFO 3392 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-28 16:53:22.149  INFO 3392 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:180f69cb-6857-4ad3-8b99-488768395567 - registration status: 204
+2026-06-28 16:53:22.170  INFO 3392 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 4.227 seconds (JVM running for 4.785)
+2026-06-28 16:53:52.033  INFO 3392 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-28 16:53:52.033  INFO 3392 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-28 16:53:52.034  INFO 3392 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-28 16:53:52.034  INFO 3392 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-28 16:53:52.034  INFO 3392 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-28 16:53:52.034  INFO 3392 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-28 16:53:52.034  INFO 3392 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-28 16:53:52.045  INFO 3392 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-28 16:58:21.610  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:00:18.529  INFO 3392 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 17:00:18.529  INFO 3392 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-28 17:00:18.530  INFO 3392 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-28 17:00:18.549  INFO 3392 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-28 17:00:18.550  INFO 3392 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-28 17:03:21.616  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:08:21.622  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:10:13.677  INFO 3392 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-28 17:10:13.677  INFO 3392 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-28 17:11:33.445  INFO 3392 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-28 17:11:33.445  INFO 3392 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-28 17:11:36.725  INFO 3392 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-28 17:11:36.726  INFO 3392 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-28 17:13:21.630  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:18:21.639  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:23:21.646  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:28:21.654  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:33:21.662  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:38:21.664  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:43:21.679  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:48:21.684  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:53:21.687  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 17:58:21.688  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:03:21.700  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:08:21.716  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:13:21.730  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:18:21.741  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:23:21.748  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:28:21.750  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:33:21.764  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:38:21.772  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:43:21.779  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:48:21.786  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:53:21.799  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 18:58:21.803  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 19:03:21.816  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 19:08:21.825  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 19:13:21.829  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 19:18:21.843  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 19:23:21.859  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28 19:28:21.873  INFO 3392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

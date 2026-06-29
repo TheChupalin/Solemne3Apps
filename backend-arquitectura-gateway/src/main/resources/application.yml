@@ -1,0 +1,39 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8080
+  forward-headers-strategy: framework
+
+spring:
+  application:
+    name: msvc-gateway
+
+  cloud:
+    gateway:
+      mvc:
+        routes:
+
+          - id: BFF_microservicio1
+            uri: lb://BFF
+            predicates:
+              - Path=/api/bff/microservicio1/**
+
+          - id: BFF_microservicio2
+            uri: lb://BFF
+            predicates:
+              - Path=/api/bff/microservicio2/**
+
+          - id: BFF_indicadores
+            uri: lb://BFF
+            predicates:
+              - Path=/api/bff/indicadores/**
+             
+        
+logging:
+  file:
+    name: logs/gateway.log
