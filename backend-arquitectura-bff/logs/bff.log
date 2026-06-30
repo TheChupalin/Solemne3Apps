@@ -819,3 +819,867 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-06-30 09:18:59.944  INFO 31504 --- [http-nio-auto-1-exec-3] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnDolar() idProducto: 3
 2026-06-30 09:19:05.244  INFO 31504 --- [http-nio-auto-1-exec-4] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/indicadores-actuales
 2026-06-30 09:19:05.245  INFO 31504 --- [http-nio-auto-1-exec-4] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getIndicadoresActuales()
+2026-06-30 09:21:36.695  INFO 31504 --- [http-nio-auto-1-exec-6] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:21:36.696  INFO 31504 --- [http-nio-auto-1-exec-6] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:21:39.227  INFO 31504 --- [http-nio-auto-1-exec-7] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/indicadores-actuales
+2026-06-30 09:21:39.228  INFO 31504 --- [http-nio-auto-1-exec-7] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getIndicadoresActuales()
+2026-06-30 09:21:52.201  INFO 31504 --- [http-nio-auto-1-exec-8] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-dolar id=3
+2026-06-30 09:21:52.202  INFO 31504 --- [http-nio-auto-1-exec-8] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnDolar() idProducto: 3
+2026-06-30 09:21:59.921  INFO 31504 --- [http-nio-auto-1-exec-9] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-uf id=3
+2026-06-30 09:21:59.922  INFO 31504 --- [http-nio-auto-1-exec-9] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnUf() idProducto: 3
+2026-06-30 09:24:48.534  INFO 31888 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 31888 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 09:24:48.536  INFO 31888 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 09:24:49.064  INFO 31888 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 09:24:49.322  INFO 31888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 09:24:49.327  INFO 31888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:24:49.328  INFO 31888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:24:49.431  INFO 31888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:24:49.431  INFO 31888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2026-06-30 09:24:49.573  INFO 31888 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 09:24:49.635  INFO 31888 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 09:24:49.975  INFO 31888 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:24:50.069  WARN 31888 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:24:50.108  INFO 31888 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:24:50.142  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:24:50.147  INFO 31888 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:24:50.161  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:24:50.162  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:24:50.162  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:24:50.162  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:24:50.162  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:24:50.162  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:24:50.162  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:24:50.439  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:24:50.441  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:24:50.442  INFO 31888 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:24:50.446  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782825890445 with initial instances count: 1
+2026-06-30 09:24:50.447  INFO 31888 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 09:24:50.447  INFO 31888 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782825890447, current=UP, previous=STARTING]
+2026-06-30 09:24:50.449  INFO 31888 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:23517428-fd83-44a7-9832-74acb98f3bfb: registering service...
+2026-06-30 09:24:50.484  INFO 31888 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:23517428-fd83-44a7-9832-74acb98f3bfb - registration status: 204
+2026-06-30 09:24:50.488  INFO 31888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 09:24:50.488  INFO 31888 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 09:24:50.523  INFO 31888 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.273 seconds (JVM running for 2.769)
+2026-06-30 09:29:50.168  INFO 31888 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:34:50.173  INFO 31888 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:39:50.175  INFO 31888 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:42:17.412  INFO 32360 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 32360 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 09:42:17.414  INFO 32360 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 09:42:17.943  INFO 32360 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 09:42:18.190  INFO 32360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 09:42:18.200  INFO 32360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:42:18.200  INFO 32360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:42:18.317  INFO 32360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:42:18.317  INFO 32360 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 873 ms
+2026-06-30 09:42:18.474  INFO 32360 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 09:42:18.543  INFO 32360 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 09:42:18.895  INFO 32360 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:42:18.977  WARN 32360 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:42:19.022  INFO 32360 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:42:19.053  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:42:19.061  INFO 32360 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:42:19.091  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:42:19.092  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:42:19.092  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:42:19.092  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:42:19.092  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:42:19.092  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:42:19.092  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:42:19.348  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:42:19.349  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:42:19.351  INFO 32360 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:42:19.356  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782826939355 with initial instances count: 0
+2026-06-30 09:42:19.357  INFO 32360 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 09:42:19.359  INFO 32360 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782826939358, current=UP, previous=STARTING]
+2026-06-30 09:42:19.361  INFO 32360 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:2f1a1d14-f2d4-48fc-bf6d-3628717da112: registering service...
+2026-06-30 09:42:19.401  INFO 32360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 09:42:19.402  INFO 32360 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 09:42:19.405  INFO 32360 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:2f1a1d14-f2d4-48fc-bf6d-3628717da112 - registration status: 204
+2026-06-30 09:42:19.448  INFO 32360 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.336 seconds (JVM running for 2.716)
+2026-06-30 09:42:49.362  INFO 32360 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:42:49.362  INFO 32360 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:42:49.362  INFO 32360 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:42:49.363  INFO 32360 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:42:49.363  INFO 32360 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:42:49.364  INFO 32360 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 09:42:49.364  INFO 32360 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:42:49.387  INFO 32360 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:43:08.263  INFO 32360 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:43:08.264  INFO 32360 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:43:08.265  INFO 32360 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 09:43:08.300  INFO 32360 --- [http-nio-8083-exec-1] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-uf id=3
+2026-06-30 09:43:08.300  INFO 32360 --- [http-nio-8083-exec-1] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnUf() idProducto: 3
+2026-06-30 09:44:13.697  INFO 32360 --- [http-nio-8083-exec-3] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-dolar id=3
+2026-06-30 09:44:13.697  INFO 32360 --- [http-nio-8083-exec-3] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnDolar() idProducto: 3
+2026-06-30 09:44:26.564  INFO 32360 --- [http-nio-8083-exec-4] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/indicadores-actuales
+2026-06-30 09:44:26.564  INFO 32360 --- [http-nio-8083-exec-4] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getIndicadoresActuales()
+2026-06-30 09:46:06.191  INFO 32360 --- [http-nio-8083-exec-6] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:46:06.191  INFO 32360 --- [http-nio-8083-exec-6] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:47:19.106  INFO 32360 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:47:30.246  INFO 32360 --- [http-nio-8083-exec-8] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:47:30.247  INFO 32360 --- [http-nio-8083-exec-8] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:51:20.709  INFO 32360 --- [http-nio-8083-exec-10] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/delete/{id}
+2026-06-30 09:51:20.710  INFO 32360 --- [http-nio-8083-exec-10] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl deleteById() id: 6
+2026-06-30 09:51:24.463  INFO 32360 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:51:24.464  INFO 32360 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:52:19.110  INFO 32360 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:58:55.071  INFO 35792 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 35792 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 09:58:55.073  INFO 35792 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 09:58:55.618  INFO 35792 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 09:58:55.831  INFO 35792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 09:58:55.836  INFO 35792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:58:55.836  INFO 35792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:58:55.941  INFO 35792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:58:55.941  INFO 35792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+2026-06-30 09:58:56.091  INFO 35792 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 09:58:56.171  INFO 35792 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 09:58:56.510  INFO 35792 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:58:56.602  WARN 35792 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:58:56.647  INFO 35792 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:58:56.681  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:58:56.685  INFO 35792 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:58:56.703  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:58:56.703  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:58:56.704  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:58:56.704  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:58:56.704  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:58:56.704  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:58:56.704  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:58:56.950  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:58:56.953  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:58:56.955  INFO 35792 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:58:56.959  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782827936958 with initial instances count: 0
+2026-06-30 09:58:56.960  INFO 35792 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 09:58:56.961  INFO 35792 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782827936961, current=UP, previous=STARTING]
+2026-06-30 09:58:56.963  INFO 35792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:eee84f34-b5c7-4c0f-a835-4097d1c6f52a: registering service...
+2026-06-30 09:58:57.004  INFO 35792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 09:58:57.005  INFO 35792 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 09:58:57.013  INFO 35792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:eee84f34-b5c7-4c0f-a835-4097d1c6f52a - registration status: 204
+2026-06-30 09:58:57.050  INFO 35792 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.279 seconds (JVM running for 2.707)
+2026-06-30 09:59:14.381  INFO 35792 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:59:14.381  INFO 35792 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:59:14.383  INFO 35792 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 09:59:14.404  INFO 35792 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:59:14.404  INFO 35792 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:59:14.494  WARN 35792 --- [http-nio-8083-exec-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: microservicio2
+2026-06-30 09:59:14.495  WARN 35792 --- [http-nio-8083-exec-1] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service microservicio2
+2026-06-30 09:59:14.501 ERROR 35792 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : findAll [503] during [GET] to [http://microservicio2/api/microservicio2/Producto/findAll] [IBffMicroServicio2Client#findAll()]: [Load balancer does not contain an instance for the service microservicio2]
+2026-06-30 09:59:14.503 ERROR 35792 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : findAll [503] during [GET] to [http://microservicio2/api/microservicio2/Producto/findAll] [IBffMicroServicio2Client#findAll()]: [Load balancer does not contain an instance for the service microservicio2]
+2026-06-30 09:59:23.609  INFO 35792 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:59:23.610  INFO 35792 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:59:23.611  WARN 35792 --- [http-nio-8083-exec-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: microservicio2
+2026-06-30 09:59:23.611  WARN 35792 --- [http-nio-8083-exec-2] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service microservicio2
+2026-06-30 09:59:23.612 ERROR 35792 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : findAll [503] during [GET] to [http://microservicio2/api/microservicio2/Producto/findAll] [IBffMicroServicio2Client#findAll()]: [Load balancer does not contain an instance for the service microservicio2]
+2026-06-30 09:59:23.612 ERROR 35792 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : findAll [503] during [GET] to [http://microservicio2/api/microservicio2/Producto/findAll] [IBffMicroServicio2Client#findAll()]: [Load balancer does not contain an instance for the service microservicio2]
+2026-06-30 09:59:24.354  INFO 35792 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:59:24.355  INFO 35792 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:59:24.356  WARN 35792 --- [http-nio-8083-exec-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: microservicio2
+2026-06-30 09:59:24.356  WARN 35792 --- [http-nio-8083-exec-3] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service microservicio2
+2026-06-30 09:59:24.357 ERROR 35792 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : findAll [503] during [GET] to [http://microservicio2/api/microservicio2/Producto/findAll] [IBffMicroServicio2Client#findAll()]: [Load balancer does not contain an instance for the service microservicio2]
+2026-06-30 09:59:24.357 ERROR 35792 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : findAll [503] during [GET] to [http://microservicio2/api/microservicio2/Producto/findAll] [IBffMicroServicio2Client#findAll()]: [Load balancer does not contain an instance for the service microservicio2]
+2026-06-30 09:59:26.958  INFO 35792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:59:26.958  INFO 35792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:59:26.959  INFO 35792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:59:26.959  INFO 35792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:59:26.959  INFO 35792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:59:26.959  INFO 35792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 09:59:26.960  INFO 35792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:59:26.983  INFO 35792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:59:40.339  INFO 35792 --- [http-nio-8083-exec-4] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:59:40.339  INFO 35792 --- [http-nio-8083-exec-4] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:59:56.232  INFO 35792 --- [http-nio-8083-exec-5] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/create
+2026-06-30 09:59:56.232  INFO 35792 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl create
+2026-06-30 09:59:56.453 ERROR 35792 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : create La categoria con id=99 no existe
+2026-06-30 09:59:56.455 ERROR 35792 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : create La categoria con id=99 no existe
+2026-06-30 09:59:56.456 ERROR 35792 --- [http-nio-8083-exec-5] c.m.b.c.BffM2ProductoController          : create La categoria con id=99 no existe
+2026-06-30 10:00:10.810  INFO 35792 --- [http-nio-8083-exec-6] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 10:00:10.810  INFO 35792 --- [http-nio-8083-exec-6] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 10:03:40.948  INFO 19608 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 19608 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 10:03:40.952  INFO 19608 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 10:03:41.507  INFO 19608 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 10:03:41.727  INFO 19608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 10:03:41.737  INFO 19608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:03:41.737  INFO 19608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:03:41.858  INFO 19608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:03:41.858  INFO 19608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 868 ms
+2026-06-30 10:03:42.000  INFO 19608 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:03:42.067  INFO 19608 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:03:42.392  INFO 19608 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:03:42.509  WARN 19608 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:03:42.562  INFO 19608 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:03:42.605  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:03:42.609  INFO 19608 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:03:42.622  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:03:42.623  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:03:42.623  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:03:42.623  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:03:42.623  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:03:42.623  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:03:42.623  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:03:42.854  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:03:42.857  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:03:42.858  INFO 19608 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:03:42.863  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782828222863 with initial instances count: 1
+2026-06-30 10:03:42.865  INFO 19608 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 10:03:42.865  INFO 19608 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782828222865, current=UP, previous=STARTING]
+2026-06-30 10:03:42.866  INFO 19608 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:bd7e2526-d8f4-449d-b7ea-5d55a495fc73: registering service...
+2026-06-30 10:03:42.899  INFO 19608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 10:03:42.899  INFO 19608 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 10:03:42.907  INFO 19608 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:bd7e2526-d8f4-449d-b7ea-5d55a495fc73 - registration status: 204
+2026-06-30 10:03:42.939  INFO 19608 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.273 seconds (JVM running for 2.822)
+2026-06-30 10:04:52.536  INFO 19608 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:04:52.537  INFO 19608 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:04:52.537  INFO 19608 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-30 10:04:52.557  INFO 19608 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 10:04:52.558  INFO 19608 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 10:05:02.971  INFO 19608 --- [http-nio-8083-exec-2] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/delete/{id}
+2026-06-30 10:05:02.972  INFO 19608 --- [http-nio-8083-exec-2] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl deleteById() id: 7
+2026-06-30 10:05:06.682  INFO 19608 --- [http-nio-8083-exec-3] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/delete/{id}
+2026-06-30 10:05:06.682  INFO 19608 --- [http-nio-8083-exec-3] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl deleteById() id: 8
+2026-06-30 10:06:25.053  INFO 19608 --- [http-nio-8083-exec-5] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 10:06:25.054  INFO 19608 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 10:06:44.969  WARN 19608 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+2026-06-30 10:06:49.169  INFO 19608 --- [http-nio-8083-exec-7] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/update/{id}
+2026-06-30 10:06:49.175  INFO 19608 --- [http-nio-8083-exec-7] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl update() id: 2 productoDTO: ProductoDTO(id=2, nombre=Master Cat 20kg, descripcion=Alimento para gatos, precio=24000.0, stock=44, idCategoria=1)
+2026-06-30 10:06:53.445  INFO 19608 --- [http-nio-8083-exec-8] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/update/{id}
+2026-06-30 10:06:53.446  INFO 19608 --- [http-nio-8083-exec-8] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl update() id: 2 productoDTO: ProductoDTO(id=2, nombre=Master Cat 20kg, descripcion=Alimento para gatos, precio=24000.0, stock=45, idCategoria=1)
+2026-06-30 10:08:07.971  INFO 19608 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:08:07.972  INFO 19608 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findById() id: 2
+2026-06-30 10:08:34.574  INFO 19608 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/create
+2026-06-30 10:08:34.576  INFO 19608 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl create() categoriaProductoDTO: CategoriaProductoDTO(id=3, nombre=Camas para Perros y Gatos, descripcion=camas)
+2026-06-30 10:08:42.634  INFO 19608 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:09:00.487  WARN 19608 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:09:43.097  WARN 19608 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:09:44.205  WARN 19608 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:09:44.655  WARN 19608 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:09:45.070  WARN 19608 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:10:48.266  WARN 19608 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:11:25.855  WARN 19608 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:12:59.289  WARN 19608 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:01.309  WARN 19608 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:02.068  WARN 19608 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:02.683  WARN 19608 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:04.445  INFO 19608 --- [http-nio-8083-exec-5] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 10:13:04.446  INFO 19608 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 10:13:18.809  INFO 19608 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:13:18.810  INFO 19608 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-30 10:13:26.838  WARN 19608 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:27.611  WARN 19608 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:28.081  WARN 19608 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:28.240  WARN 19608 --- [http-nio-8083-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:42.645  INFO 19608 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:13:58.468  WARN 19608 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:59.203  WARN 19608 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:59.645  WARN 19608 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:59.805  WARN 19608 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:13:59.968  WARN 19608 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:00.127  WARN 19608 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:18.932  WARN 19608 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:21.500  WARN 19608 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:22.241  WARN 19608 --- [http-nio-8083-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:22.546  WARN 19608 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:23.190  WARN 19608 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:23.448  WARN 19608 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:23.819  WARN 19608 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:14:34.560  WARN 19608 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:15:11.473  INFO 8952 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 8952 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 10:15:11.475  INFO 8952 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 10:15:12.027  INFO 8952 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 10:15:12.249  INFO 8952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 10:15:12.254  INFO 8952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:15:12.255  INFO 8952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:15:12.357  INFO 8952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:15:12.359  INFO 8952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 855 ms
+2026-06-30 10:15:12.500  INFO 8952 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:15:12.558  INFO 8952 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:15:12.863  INFO 8952 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:15:12.948  WARN 8952 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:15:12.985  INFO 8952 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:15:13.013  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:15:13.019  INFO 8952 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:15:13.036  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:15:13.036  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:15:13.036  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:15:13.036  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:15:13.037  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:15:13.037  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:15:13.037  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:15:13.361  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:15:13.364  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:15:13.366  INFO 8952 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:15:13.373  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782828913371 with initial instances count: 0
+2026-06-30 10:15:13.375  INFO 8952 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 10:15:13.376  INFO 8952 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782828913376, current=UP, previous=STARTING]
+2026-06-30 10:15:13.379  INFO 8952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:62791b35-d359-4f7d-9fb8-b7358bd13ec7: registering service...
+2026-06-30 10:15:13.436  INFO 8952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:62791b35-d359-4f7d-9fb8-b7358bd13ec7 - registration status: 204
+2026-06-30 10:15:13.437  INFO 8952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 10:15:13.437  INFO 8952 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 10:15:13.478  INFO 8952 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.304 seconds (JVM running for 2.656)
+2026-06-30 10:15:43.377  INFO 8952 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:15:43.378  INFO 8952 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:15:43.379  INFO 8952 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:15:43.379  INFO 8952 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:15:43.380  INFO 8952 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:15:43.380  INFO 8952 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:15:43.381  INFO 8952 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:15:43.402  INFO 8952 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:15:49.100  INFO 8952 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:15:49.101  INFO 8952 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:15:49.102  INFO 8952 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:15:49.120  INFO 8952 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:15:49.121  INFO 8952 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-30 10:15:49.316  INFO 8952 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:15:49.317  INFO 8952 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-30 10:16:18.084  WARN 8952 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+2026-06-30 10:16:21.586  INFO 8952 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:16:21.587  INFO 8952 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 3 categoriaProductoDTO: CategoriaProductoDTO(id=3, nombre=Camas para Perros y Gatos, conejos, descripcion=camas)
+2026-06-30 10:16:40.690  WARN 8952 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:43.901  WARN 8952 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:47.461  WARN 8952 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:48.431  WARN 8952 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:55.598  WARN 8952 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:56.015  WARN 8952 --- [http-nio-8083-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:56.370  WARN 8952 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:56.502  WARN 8952 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:56.654  WARN 8952 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:56.811  WARN 8952 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:56.967  WARN 8952 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:57.274  WARN 8952 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:57.402  WARN 8952 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:57.534  WARN 8952 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:57.699  WARN 8952 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:57.838  WARN 8952 --- [http-nio-8083-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:57.980  WARN 8952 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:58.132  WARN 8952 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:58.277  WARN 8952 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:16:58.416  WARN 8952 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:03.491  INFO 8952 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:17:03.491  INFO 8952 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 3 categoriaProductoDTO: CategoriaProductoDTO(id=3, nombre=Camas para Perros y Gatos, conejos, descripcion=camas)
+2026-06-30 10:17:05.352  INFO 8952 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:17:05.352  INFO 8952 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-30 10:17:08.191  WARN 8952 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:08.814  WARN 8952 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:08.979  WARN 8952 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:09.161  WARN 8952 --- [http-nio-8083-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:09.331  WARN 8952 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:09.502  WARN 8952 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:09.683  WARN 8952 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:16.609  WARN 8952 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:17.272  WARN 8952 --- [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:17.457  WARN 8952 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:45.878  WARN 8952 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:46.041  WARN 8952 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:17:46.222  WARN 8952 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:18:12.726  INFO 8952 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/delete/{id}
+2026-06-30 10:18:12.726  INFO 8952 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl deleteById() id: 3
+2026-06-30 10:18:15.946  INFO 8952 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:18:15.946  INFO 8952 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-30 10:18:51.478  INFO 8952 --- [http-nio-8083-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 10:18:51.479  INFO 8952 --- [http-nio-8083-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 10:20:13.050  INFO 8952 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:23:14.564  INFO 8952 --- [http-nio-8083-exec-5] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 10:23:14.565  INFO 8952 --- [http-nio-8083-exec-5] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 10:24:19.019  INFO 8952 --- [http-nio-8083-exec-7] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 10:24:19.019  INFO 8952 --- [http-nio-8083-exec-7] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 10:24:44.381  INFO 8952 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:24:44.382  INFO 8952 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-30 10:24:54.733  INFO 8952 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:24:54.734  INFO 8952 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findById() id: 2
+2026-06-30 10:25:13.063  INFO 8952 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:25:21.544  INFO 8952 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/create
+2026-06-30 10:25:21.544  INFO 8952 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl create() categoriaProductoDTO: CategoriaProductoDTO(id=null, nombre=Camas para Perros y Gatos, descripcion=camas)
+2026-06-30 10:25:40.054  WARN 8952 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:25:43.465  INFO 8952 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:25:43.465  INFO 8952 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 3 categoriaProductoDTO: CategoriaProductoDTO(id=null, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:25:43.490 ERROR 8952 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [500] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/3] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: [categoriaProductoRepository.findById id=3 no encontrado]
+2026-06-30 10:25:43.492 ERROR 8952 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update [500] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/3] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: [categoriaProductoRepository.findById id=3 no encontrado]
+2026-06-30 10:25:56.676  INFO 8952 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:25:56.676  INFO 8952 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 3 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:25:56.688 ERROR 8952 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [500] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/3] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: [categoriaProductoRepository.findById id=3 no encontrado]
+2026-06-30 10:25:56.689 ERROR 8952 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update [500] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/3] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: [categoriaProductoRepository.findById id=3 no encontrado]
+2026-06-30 10:26:07.360  INFO 8952 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:26:07.362  INFO 8952 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 3 categoriaProductoDTO: CategoriaProductoDTO(id=3, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:26:07.378 ERROR 8952 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : update [500] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/3] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: [categoriaProductoRepository.findById id=3 no encontrado]
+2026-06-30 10:26:07.378 ERROR 8952 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : update [500] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/3] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: [categoriaProductoRepository.findById id=3 no encontrado]
+2026-06-30 10:26:13.605  INFO 8952 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:26:13.606  INFO 8952 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 4 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:27:54.348  INFO 8952 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:27:54.349  INFO 8952 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:27:54.360 ERROR 8952 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : update [500] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: [categoriaProductoRepository.findById id=5 no encontrado]
+2026-06-30 10:27:54.361 ERROR 8952 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : update [500] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: [categoriaProductoRepository.findById id=5 no encontrado]
+2026-06-30 10:30:13.074  INFO 8952 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:32:42.718  INFO 26224 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 26224 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 10:32:42.720  INFO 26224 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 10:32:43.303  INFO 26224 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 10:32:43.512  INFO 26224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 10:32:43.523  INFO 26224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:32:43.523  INFO 26224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:32:43.674  INFO 26224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:32:43.674  INFO 26224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 916 ms
+2026-06-30 10:32:43.856  INFO 26224 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:32:43.959  INFO 26224 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:32:44.358  INFO 26224 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:32:44.469  WARN 26224 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:32:44.524  INFO 26224 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:32:44.559  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:32:44.563  INFO 26224 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:32:44.600  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:32:44.602  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:32:44.602  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:32:44.602  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:32:44.602  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:32:44.602  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:32:44.602  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:32:44.884  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:32:44.886  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:32:44.888  INFO 26224 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:32:44.891  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782829964891 with initial instances count: 0
+2026-06-30 10:32:44.893  INFO 26224 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 10:32:44.894  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782829964894, current=UP, previous=STARTING]
+2026-06-30 10:32:44.897  INFO 26224 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:3def7235-934c-4438-97e9-f298ce6c0dea: registering service...
+2026-06-30 10:32:44.970  INFO 26224 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:3def7235-934c-4438-97e9-f298ce6c0dea - registration status: 204
+2026-06-30 10:32:44.970  INFO 26224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 10:32:44.971  INFO 26224 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 10:32:45.018  INFO 26224 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.601 seconds (JVM running for 3.052)
+2026-06-30 10:33:14.887  INFO 26224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:33:14.888  INFO 26224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:33:14.888  INFO 26224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:33:14.889  INFO 26224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:33:14.889  INFO 26224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:33:14.890  INFO 26224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:33:14.890  INFO 26224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:33:14.916  INFO 26224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:33:20.143  INFO 26224 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:33:20.144  INFO 26224 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:33:20.146  INFO 26224 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:33:20.160  WARN 26224 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:33:21.935  WARN 26224 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:33:39.818  INFO 26224 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:39.819  INFO 26224 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:40.051 ERROR 26224 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:40.052 ERROR 26224 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:41.213  INFO 26224 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:41.214  INFO 26224 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:41.225 ERROR 26224 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:41.225 ERROR 26224 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:41.813  INFO 26224 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:41.814  INFO 26224 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:41.831 ERROR 26224 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:41.832 ERROR 26224 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:42.361  INFO 26224 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:42.361  INFO 26224 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:42.372 ERROR 26224 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:42.372 ERROR 26224 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:42.852  INFO 26224 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:42.853  INFO 26224 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:42.868 ERROR 26224 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:42.868 ERROR 26224 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:43.548  INFO 26224 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:43.548  INFO 26224 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:43.557 ERROR 26224 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:43.558 ERROR 26224 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:44.335  INFO 26224 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:44.336  INFO 26224 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:44.347 ERROR 26224 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:44.347 ERROR 26224 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:44.811  INFO 26224 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:44.812  INFO 26224 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:44.828 ERROR 26224 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:44.828 ERROR 26224 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:53.031  INFO 26224 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:53.032  INFO 26224 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:53.044 ERROR 26224 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:53.044 ERROR 26224 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:53.920  INFO 26224 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:53.921  INFO 26224 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:53.934 ERROR 26224 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:53.935 ERROR 26224 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:58.691  INFO 26224 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:58.692  INFO 26224 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:33:58.700 ERROR 26224 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:33:58.701 ERROR 26224 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:05.537  INFO 26224 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:05.539  INFO 26224 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:05.554 ERROR 26224 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:05.555 ERROR 26224 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:06.122  INFO 26224 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:06.122  INFO 26224 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:06.132 ERROR 26224 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:06.132 ERROR 26224 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:06.548  INFO 26224 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:06.548  INFO 26224 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:06.559 ERROR 26224 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:06.559 ERROR 26224 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:06.711  INFO 26224 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:06.711  INFO 26224 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:06.720 ERROR 26224 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:06.720 ERROR 26224 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:06.871  INFO 26224 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:06.871  INFO 26224 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:06.891 ERROR 26224 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:06.891 ERROR 26224 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.051  INFO 26224 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.051  INFO 26224 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:07.061 ERROR 26224 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.061 ERROR 26224 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.207  INFO 26224 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.207  INFO 26224 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:07.216 ERROR 26224 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.217 ERROR 26224 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.388  INFO 26224 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.389  INFO 26224 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:07.397 ERROR 26224 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.397 ERROR 26224 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.532  INFO 26224 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.533  INFO 26224 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:07.544 ERROR 26224 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.544 ERROR 26224 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.922  INFO 26224 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.923  INFO 26224 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:07.933 ERROR 26224 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:07.933 ERROR 26224 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.078  INFO 26224 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.079  INFO 26224 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:08.089 ERROR 26224 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.089 ERROR 26224 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.245  INFO 26224 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.245  INFO 26224 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:08.253 ERROR 26224 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.253 ERROR 26224 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.444  INFO 26224 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.444  INFO 26224 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:08.453 ERROR 26224 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.453 ERROR 26224 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.611  INFO 26224 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.611  INFO 26224 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:08.620 ERROR 26224 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.620 ERROR 26224 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.792  INFO 26224 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.793  INFO 26224 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:08.802 ERROR 26224 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:08.803 ERROR 26224 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:09.043  INFO 26224 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:09.044  INFO 26224 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:09.053 ERROR 26224 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:09.054 ERROR 26224 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:09.221  INFO 26224 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:09.222  INFO 26224 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:09.231 ERROR 26224 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:09.232 ERROR 26224 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:10.248  INFO 26224 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:10.248  INFO 26224 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:10.260 ERROR 26224 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:10.261 ERROR 26224 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:10.422  INFO 26224 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:10.422  INFO 26224 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:10.430 ERROR 26224 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:10.430 ERROR 26224 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:10.615  INFO 26224 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:10.615  INFO 26224 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:10.623 ERROR 26224 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:10.624 ERROR 26224 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:30.943  INFO 26224 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:30.944  INFO 26224 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:30.955 ERROR 26224 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:30.956 ERROR 26224 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:31.487  INFO 26224 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:31.488  INFO 26224 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:31.496 ERROR 26224 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:31.496 ERROR 26224 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:31.643  INFO 26224 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:31.644  INFO 26224 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:34:31.653 ERROR 26224 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:34:31.653 ERROR 26224 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:35:00.099  INFO 10136 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 10136 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 10:35:00.102  INFO 10136 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 10:35:00.650  INFO 10136 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 10:35:00.833  INFO 10136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 10:35:00.839  INFO 10136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:35:00.839  INFO 10136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:35:00.942  INFO 10136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:35:00.942  INFO 10136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 804 ms
+2026-06-30 10:35:01.065  INFO 10136 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:35:01.128  INFO 10136 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:35:01.444  INFO 10136 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:35:01.521  WARN 10136 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:35:01.557  INFO 10136 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:35:01.579  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:35:01.582  INFO 10136 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:35:01.599  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:35:01.599  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:35:01.599  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:35:01.599  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:35:01.599  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:35:01.599  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:35:01.599  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:35:01.830  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:35:01.832  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:35:01.834  INFO 10136 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:35:01.838  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830101837 with initial instances count: 2
+2026-06-30 10:35:01.839  INFO 10136 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 10:35:01.840  INFO 10136 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830101840, current=UP, previous=STARTING]
+2026-06-30 10:35:01.841  INFO 10136 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:91a80921-6e12-48b6-ab9b-5465c2a18efa: registering service...
+2026-06-30 10:35:01.880  INFO 10136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 10:35:01.881  INFO 10136 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 10:35:01.881  INFO 10136 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:91a80921-6e12-48b6-ab9b-5465c2a18efa - registration status: 204
+2026-06-30 10:35:01.915  INFO 10136 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.102 seconds (JVM running for 2.474)
+2026-06-30 10:35:51.323  INFO 10136 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:35:51.324  INFO 10136 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:35:51.325  INFO 10136 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:35:51.360  INFO 10136 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:35:51.361  INFO 10136 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:35:51.635 ERROR 10136 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:35:51.636 ERROR 10136 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:35:55.287  INFO 10136 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:35:55.288  INFO 10136 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:35:55.303 ERROR 10136 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:35:55.303 ERROR 10136 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:35:55.954  INFO 10136 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:35:55.955  INFO 10136 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:35:55.964 ERROR 10136 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:35:55.964 ERROR 10136 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:37:36.019  INFO 22852 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 22852 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 10:37:36.021  INFO 22852 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 10:37:36.584  INFO 22852 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 10:37:36.788  INFO 22852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 10:37:36.796  INFO 22852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:37:36.797  INFO 22852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:37:36.962  INFO 22852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:37:36.963  INFO 22852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 901 ms
+2026-06-30 10:37:37.183  INFO 22852 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:37:37.261  INFO 22852 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:37:37.643  INFO 22852 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:37:37.743  WARN 22852 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:37:37.812  INFO 22852 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:37:37.843  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:37:37.847  INFO 22852 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:37:37.881  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:37:37.882  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:37:37.882  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:37:37.882  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:37:37.882  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:37:37.882  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:37:37.883  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:37:38.131  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:37:38.133  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:37:38.136  INFO 22852 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:37:38.147  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830258145 with initial instances count: 1
+2026-06-30 10:37:38.149  INFO 22852 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 10:37:38.149  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830258149, current=UP, previous=STARTING]
+2026-06-30 10:37:38.151  INFO 22852 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:e99677a5-f3a0-4ab8-83d0-16c9dc530ea6: registering service...
+2026-06-30 10:37:38.197  INFO 22852 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:e99677a5-f3a0-4ab8-83d0-16c9dc530ea6 - registration status: 204
+2026-06-30 10:37:38.198  INFO 22852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 10:37:38.198  INFO 22852 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 10:37:38.235  INFO 22852 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.551 seconds (JVM running for 2.949)
+2026-06-30 10:38:12.061  INFO 22852 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:38:12.061  INFO 22852 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:38:12.063  INFO 22852 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:38:12.100  INFO 22852 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:12.100  INFO 22852 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:12.476 ERROR 22852 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:12.477 ERROR 22852 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:13.595  INFO 22852 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:13.595  INFO 22852 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:13.609 ERROR 22852 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:13.609 ERROR 22852 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.107  INFO 22852 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.107  INFO 22852 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:14.117 ERROR 22852 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.117 ERROR 22852 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.302  INFO 22852 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.303  INFO 22852 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:14.315 ERROR 22852 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.316 ERROR 22852 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.495  INFO 22852 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.495  INFO 22852 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:14.513 ERROR 22852 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.513 ERROR 22852 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.670  INFO 22852 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.671  INFO 22852 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:14.681 ERROR 22852 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.681 ERROR 22852 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.863  INFO 22852 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.864  INFO 22852 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:14.877 ERROR 22852 --- [http-nio-8083-exec-7] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.877 ERROR 22852 --- [http-nio-8083-exec-7] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.986  INFO 22852 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.986  INFO 22852 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:14.997 ERROR 22852 --- [http-nio-8083-exec-8] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:14.997 ERROR 22852 --- [http-nio-8083-exec-8] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:29.873  INFO 22852 --- [http-nio-8083-exec-9] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:38:29.873  INFO 22852 --- [http-nio-8083-exec-9] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()
+2026-06-30 10:38:39.583  INFO 22852 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:39.583  INFO 22852 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=5, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:39.598 ERROR 22852 --- [http-nio-8083-exec-10] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:39.598 ERROR 22852 --- [http-nio-8083-exec-10] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:43.827  INFO 22852 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:43.828  INFO 22852 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:43.837 ERROR 22852 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:43.837 ERROR 22852 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:44.372  INFO 22852 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:44.373  INFO 22852 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:44.381 ERROR 22852 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:44.382 ERROR 22852 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:44.540  INFO 22852 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:44.541  INFO 22852 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:44.548 ERROR 22852 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:44.549 ERROR 22852 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:44.746  INFO 22852 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:44.746  INFO 22852 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:44.758 ERROR 22852 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:44.758 ERROR 22852 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:45.033  INFO 22852 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:45.034  INFO 22852 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:45.045 ERROR 22852 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:45.045 ERROR 22852 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:45.206  INFO 22852 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:45.206  INFO 22852 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:38:45.217 ERROR 22852 --- [http-nio-8083-exec-6] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:38:45.217 ERROR 22852 --- [http-nio-8083-exec-6] c.m.b.c.BffM1CategoriaProductoController : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:42:06.819  INFO 34540 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 34540 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 10:42:06.824  INFO 34540 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 10:42:07.378  INFO 34540 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 10:42:07.582  INFO 34540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 10:42:07.587  INFO 34540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:42:07.589  INFO 34540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:42:07.715  INFO 34540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:42:07.715  INFO 34540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2026-06-30 10:42:07.861  INFO 34540 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:42:07.924  INFO 34540 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:42:08.268  INFO 34540 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:42:08.352  WARN 34540 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:42:08.396  INFO 34540 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:42:08.430  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:42:08.435  INFO 34540 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:42:08.450  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:42:08.452  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:42:08.452  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:42:08.452  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:42:08.452  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:42:08.452  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:42:08.452  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:42:08.702  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:42:08.703  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:42:08.705  INFO 34540 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:42:08.709  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830528709 with initial instances count: 2
+2026-06-30 10:42:08.711  INFO 34540 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 10:42:08.711  INFO 34540 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830528711, current=UP, previous=STARTING]
+2026-06-30 10:42:08.714  INFO 34540 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:c718fa4b-61d3-4d05-93f2-eab788aeb722: registering service...
+2026-06-30 10:42:08.749  INFO 34540 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:c718fa4b-61d3-4d05-93f2-eab788aeb722 - registration status: 204
+2026-06-30 10:42:08.751  INFO 34540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 10:42:08.751  INFO 34540 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 10:42:08.786  INFO 34540 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.251 seconds (JVM running for 2.659)
+2026-06-30 10:43:14.055  INFO 34540 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:43:14.056  INFO 34540 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:43:14.056  INFO 34540 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-30 10:43:14.087  INFO 34540 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:43:14.087  INFO 34540 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:43:14.367 ERROR 34540 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:43:14.369 ERROR 34540 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update CategoriaProducto con id=5 no encontrado
+2026-06-30 10:43:59.010  INFO 34540 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:43:59.011  INFO 34540 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:43:59.025 ERROR 34540 --- [http-nio-8083-exec-2] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:43:59.025 ERROR 34540 --- [http-nio-8083-exec-2] c.m.b.c.BffM1CategoriaProductoController : update CategoriaProducto con id=5 no encontrado
+2026-06-30 10:44:11.723  INFO 34540 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:44:11.724  INFO 34540 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:44:11.735 ERROR 34540 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:44:11.736 ERROR 34540 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : update CategoriaProducto con id=5 no encontrado
+2026-06-30 10:47:18.223  INFO 13896 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 13896 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 10:47:18.225  INFO 13896 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 10:47:18.778  INFO 13896 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 10:47:18.994  INFO 13896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 10:47:19.005  INFO 13896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:47:19.005  INFO 13896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:47:19.152  INFO 13896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:47:19.152  INFO 13896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
+2026-06-30 10:47:19.321  INFO 13896 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:47:19.389  INFO 13896 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:47:19.759  INFO 13896 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:47:19.865  WARN 13896 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:47:19.912  INFO 13896 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:47:19.946  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:47:19.955  INFO 13896 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:47:19.991  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:47:19.992  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:47:19.992  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:47:19.992  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:47:19.992  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:47:19.992  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:47:19.993  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:47:20.244  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:47:20.246  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:47:20.248  INFO 13896 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:47:20.251  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830840251 with initial instances count: 1
+2026-06-30 10:47:20.253  INFO 13896 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 10:47:20.254  INFO 13896 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830840254, current=UP, previous=STARTING]
+2026-06-30 10:47:20.256  INFO 13896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:4eb76f56-f90f-43b4-8177-77f17f5d3959: registering service...
+2026-06-30 10:47:20.293  INFO 13896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 10:47:20.293  INFO 13896 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 10:47:20.295  INFO 13896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:4eb76f56-f90f-43b4-8177-77f17f5d3959 - registration status: 204
+2026-06-30 10:47:20.338  INFO 13896 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.424 seconds (JVM running for 2.781)
+2026-06-30 10:48:02.247  INFO 13896 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:48:02.247  INFO 13896 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:48:02.249  INFO 13896 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-30 10:48:02.281  INFO 13896 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:48:02.282  INFO 13896 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:48:02.596 ERROR 13896 --- [http-nio-8083-exec-1] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:48:02.598 ERROR 13896 --- [http-nio-8083-exec-1] c.m.b.c.BffM1CategoriaProductoController : update CategoriaProducto con id=5 no encontrado
+2026-06-30 10:48:23.310  WARN 13896 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2026-06-30 10:48:27.330  WARN 13896 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:48:30.048  WARN 13896 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:51:09.656  INFO 692 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 692 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 10:51:09.658  INFO 692 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 10:51:10.223  INFO 692 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 10:51:10.444  INFO 692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-06-30 10:51:10.453  INFO 692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:51:10.453  INFO 692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:51:10.565  INFO 692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:51:10.566  INFO 692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 881 ms
+2026-06-30 10:51:10.712  INFO 692 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:51:10.775  INFO 692 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:51:11.076  INFO 692 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:51:11.195  WARN 692 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:51:11.256  INFO 692 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:51:11.352  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:51:11.359  INFO 692 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:51:11.394  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:51:11.395  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:51:11.395  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:51:11.395  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:51:11.395  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:51:11.395  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:51:11.396  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:51:11.750  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:51:11.752  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:51:11.755  INFO 692 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:51:11.761  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782831071760 with initial instances count: 1
+2026-06-30 10:51:11.762  INFO 692 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 10:51:11.763  INFO 692 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782831071763, current=UP, previous=STARTING]
+2026-06-30 10:51:11.766  INFO 692 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:d9482a6a-f2a8-4d73-a1c1-1805c5344ed0: registering service...
+2026-06-30 10:51:11.814  INFO 692 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:d9482a6a-f2a8-4d73-a1c1-1805c5344ed0 - registration status: 204
+2026-06-30 10:51:11.815  INFO 692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2026-06-30 10:51:11.816  INFO 692 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-06-30 10:51:11.856  INFO 692 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.485 seconds (JVM running for 2.863)
+2026-06-30 10:51:52.604  INFO 692 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:51:52.604  INFO 692 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:51:52.605  INFO 692 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-30 10:51:52.637  WARN 692 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:51:53.691  WARN 692 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:51:54.069  WARN 692 --- [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:51:54.224  WARN 692 --- [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:51:55.973  INFO 692 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:51:55.974  INFO 692 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl update() id: 5 categoriaProductoDTO: CategoriaProductoDTO(id=4, nombre=Camas para Perros y Gatos, descripcion=camas para mascotas)
+2026-06-30 10:51:56.199 ERROR 692 --- [http-nio-8083-exec-5] c.m.b.s.BffCategoriaProductoServiceImpl  : update [404] during [PUT] to [http://microservicio1/api/microservicio1/CategoriaProducto/update/5] [IBffMicroServicio1Client#update(long,CategoriaProductoDTO)]: []
+2026-06-30 10:51:56.201 ERROR 692 --- [http-nio-8083-exec-5] c.m.b.c.BffM1CategoriaProductoController : update CategoriaProducto con id=5 no encontrado
+2026-06-30 10:51:58.114  WARN 692 --- [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:52:03.409  WARN 692 --- [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:52:04.842  WARN 692 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:52:05.236  WARN 692 --- [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:52:05.537  WARN 692 --- [http-nio-8083-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:52:05.684  WARN 692 --- [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:52:05.814  WARN 692 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.microservice.bff.controller.BffM2ProductoController.update(java.lang.Long,com.microservice.bff.dto.ProductoDTO)]
+2026-06-30 10:56:11.414  INFO 692 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 11:00:16.842  INFO 692 --- [http-nio-8083-exec-3] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/delete/{id}
+2026-06-30 11:00:16.843  INFO 692 --- [http-nio-8083-exec-3] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl deleteById() id: 4
+2026-06-30 11:00:19.861  INFO 692 --- [http-nio-8083-exec-4] c.m.b.c.BffM1CategoriaProductoController : BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/findAll
+2026-06-30 11:00:19.861  INFO 692 --- [http-nio-8083-exec-4] c.m.b.s.BffCategoriaProductoServiceImpl  : BFF CategoriaProductoServiceImpl findAll()

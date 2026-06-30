@@ -112,6 +112,9 @@ public class BffM2ProductoController {
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			if (e.getMessage() != null && e.getMessage().contains("no encontrado")) {
+				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+			}
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
 		}
 	}
@@ -133,6 +136,9 @@ public class BffM2ProductoController {
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			if (e.getMessage() != null && e.getMessage().contains("no encontrado")) {
+				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+			}
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
 		}
 	}

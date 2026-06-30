@@ -13,6 +13,11 @@ spring:
   application:
     name: msvc-gateway
 
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: false
+
   cloud:
     gateway:
       mvc:
@@ -32,8 +37,7 @@ spring:
             uri: lb://BFF
             predicates:
               - Path=/api/bff/indicadores/**
-             
-        
+            
 logging:
   file:
-    name: logs/gateway.log
+    name: logs/gateway.log

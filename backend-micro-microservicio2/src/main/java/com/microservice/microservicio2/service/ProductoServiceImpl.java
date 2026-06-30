@@ -10,6 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.microservice.microservicio2.client.IMicroservicio1Client;
+import com.microservice.microservicio2.dto.CategoriaProductoDTO;
 import com.microservice.microservicio2.dto.ProductoDTO;
 import com.microservice.microservicio2.entity.ProductoEntity;
 import com.microservice.microservicio2.interfaces.IProductoMapper;
@@ -26,6 +28,9 @@ public class ProductoServiceImpl implements IProductoService {
 
 	@Autowired
 	private IProductoMapper productoMapper;
+
+	@Autowired
+	private IMicroservicio1Client microservicio1Client;
 
 	@Override
 	public ResponseEntity<List<ProductoDTO>> findAll() throws Exception {
@@ -72,6 +77,25 @@ public class ProductoServiceImpl implements IProductoService {
 		ProductoEntity productoEntitySaved;
 		ProductoDTO productoDTOSaved = null;
 		try {
+			// Validar que idCategoria no sea null
+			if (productoDTO.getIdCategoria() == null) {
+				String error = "El campo idCategoria es obligatorio";
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
+				throw new Exception(error);
+			}
+
+			// Validar que la categoría exista en microservicio1
+			ResponseEntity<CategoriaProductoDTO> categoriaResponse = microservicio1Client
+					.findCategoriaById(productoDTO.getIdCategoria());
+			if (categoriaResponse.getStatusCode() == HttpStatus.NO_CONTENT
+					|| categoriaResponse.getBody() == null) {
+				String error = "La categoria con id=" + productoDTO.getIdCategoria() + " no existe";
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
+				throw new Exception(error);
+			}
+
 			productoEntity2Save = productoMapper.dTO2Entity(productoDTO);
 			productoEntitySaved = productoRepository.save(productoEntity2Save);
 			productoDTOSaved = productoMapper.entity2DTO(productoEntitySaved);
@@ -92,20 +116,40 @@ public class ProductoServiceImpl implements IProductoService {
 		ProductoEntity productoEntitySaved;
 		ProductoDTO productoDTOSaved;
 		try {
+			// Validar que el producto exista
 			optionalProductoEntity = productoRepository.findById(id);
 			productoEntity = optionalProductoEntity.orElse(null);
-			if (productoEntity != null) {
-				productoEntity2Save = productoMapper.dTO2Entity(productoDTO);
-				productoEntity2Save.setId(id);
-				productoEntitySaved = productoRepository.save(productoEntity2Save);
-				productoDTOSaved = productoMapper.entity2DTO(productoEntitySaved);
-				return ResponseEntity.status(HttpStatus.OK).body(productoDTOSaved);
-			} else {
+			if (productoEntity == null) {
 				String error = "productoRepository.findById id=" + id + " no encontrado";
 				logger.error(new Object() {
 				}.getClass().getEnclosingMethod().getName() + " " + error);
 				throw new Exception(error);
 			}
+
+			// Validar que idCategoria no sea null
+			if (productoDTO.getIdCategoria() == null) {
+				String error = "El campo idCategoria es obligatorio";
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
+				throw new Exception(error);
+			}
+
+			// Validar que la categoría exista en microservicio1
+			ResponseEntity<CategoriaProductoDTO> categoriaResponse = microservicio1Client
+					.findCategoriaById(productoDTO.getIdCategoria());
+			if (categoriaResponse.getStatusCode() == HttpStatus.NO_CONTENT
+					|| categoriaResponse.getBody() == null) {
+				String error = "La categoria con id=" + productoDTO.getIdCategoria() + " no existe";
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
+				throw new Exception(error);
+			}
+
+			productoEntity2Save = productoMapper.dTO2Entity(productoDTO);
+			productoEntity2Save.setId(id);
+			productoEntitySaved = productoRepository.save(productoEntity2Save);
+			productoDTOSaved = productoMapper.entity2DTO(productoEntitySaved);
+			return ResponseEntity.status(HttpStatus.OK).body(productoDTOSaved);
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
@@ -138,5 +182,6 @@ public class ProductoServiceImpl implements IProductoService {
 			throw new Exception(e.getMessage());
 		}
 	}
+
 
 }

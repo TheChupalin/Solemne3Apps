@@ -22,60 +22,58 @@ import com.microservice.microservicio1.interfaces.ICategoriaProductoService;
 @RestController
 @RequestMapping("/api/microservicio1/CategoriaProducto")
 public class CategoriaProductoController {
-	
+
 	private Logger logger = LoggerFactory.getLogger(CategoriaProductoController.class);
 
 	@Autowired
 	private ICategoriaProductoService categoriaProductoService;
 
-	
-	
 	@GetMapping("/findAll")
 	public ResponseEntity<?> findAll() {
 		logger.info("Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll");
 		ResponseEntity<List<CategoriaProductoDTO>> categoriaProductoDTOListResponse;
-		try
-		{
+		try {
 			categoriaProductoDTOListResponse = categoriaProductoService.findAll();
 			if (categoriaProductoDTOListResponse.getStatusCode() == HttpStatus.OK) {
 				return categoriaProductoDTOListResponse;
 			} else {
-				String error = "HttpStatus=" + categoriaProductoDTOListResponse.getStatusCode() + " " + "categoriaProductoService.findAll";
-				logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + error);
+				String error = "HttpStatus=" + categoriaProductoDTOListResponse.getStatusCode() + " "
+						+ "categoriaProductoService.findAll";
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
 				throw new Exception(error);
-			}		
-		}
-		catch (Exception e)
-		{
-			logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			}
+		} catch (Exception e) {
+			logger.error(new Object() {
+			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
-		}		
+		}
 	}
 
-	
-	
 	@GetMapping("/findById/{id}")
 	public ResponseEntity<?> findById(@PathVariable long id) {
 		logger.info("Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}");
 		ResponseEntity<CategoriaProductoDTO> categoriaProductoDTOResponse;
 		try {
 			categoriaProductoDTOResponse = categoriaProductoService.findbyId(id);
-			//check
-			if (categoriaProductoDTOResponse.getStatusCode() == HttpStatus.OK || categoriaProductoDTOResponse.getStatusCode() == HttpStatus.NO_CONTENT) {
+			// check
+			if (categoriaProductoDTOResponse.getStatusCode() == HttpStatus.OK
+					|| categoriaProductoDTOResponse.getStatusCode() == HttpStatus.NO_CONTENT) {
 				return categoriaProductoDTOResponse;
 			} else {
-				String error = "HttpStatus=" + categoriaProductoDTOResponse.getStatusCode() + " " + "categoriaProductoService.findbyId id=" + id;
-				logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + error);
+				String error = "HttpStatus=" + categoriaProductoDTOResponse.getStatusCode() + " "
+						+ "categoriaProductoService.findbyId id=" + id;
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
 				throw new Exception(error);
-			}	
+			}
 		} catch (Exception e) {
-			logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			logger.error(new Object() {
+			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
 		}
 	}
 
-	
-	
 	@PostMapping("/create")
 	public ResponseEntity<?> create(@RequestBody CategoriaProductoDTO categoriaProductoDTO) {
 		logger.info("Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/create");
@@ -85,18 +83,19 @@ public class CategoriaProductoController {
 			if (categoriaProductoDTOsavedResponse.getStatusCode() == HttpStatus.CREATED) {
 				return categoriaProductoDTOsavedResponse;
 			} else {
-				String error = "HttpStatus=" + categoriaProductoDTOsavedResponse.getStatusCode() + " " + "categoriaProductoService.create";
-				logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + error);
+				String error = "HttpStatus=" + categoriaProductoDTOsavedResponse.getStatusCode() + " "
+						+ "categoriaProductoService.create";
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
 				throw new Exception(error);
-			}				
+			}
 		} catch (Exception e) {
-			logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			logger.error(new Object() {
+			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
-		}		
+		}
 	}
 
-	
-	
 	@PutMapping("/update/{id}")
 	public ResponseEntity<?> update(@PathVariable long id,
 			@RequestBody CategoriaProductoDTO categoriaProductoDTO) {
@@ -107,18 +106,22 @@ public class CategoriaProductoController {
 			if (categoriaProductoDTOupdatedResponse.getStatusCode() == HttpStatus.OK) {
 				return categoriaProductoDTOupdatedResponse;
 			} else {
-				String error = "HttpStatus=" + categoriaProductoDTOupdatedResponse.getStatusCode() + " " + "categoriaProductoService.update id=" + id;
-				logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + error);
+				String error = "HttpStatus=" + categoriaProductoDTOupdatedResponse.getStatusCode() + " "
+						+ "categoriaProductoService.update id=" + id;
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
 				throw new Exception(error);
-			}	
+			}
 		} catch (Exception e) {
-			logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			logger.error(new Object() {
+			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			if (e.getMessage() != null && e.getMessage().contains("no encontrado")) {
+				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+			}
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
 		}
 	}
 
-	
-	
 	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<?> deleteById(@PathVariable Long id) {
 		logger.info("Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/delete/{id}");
@@ -128,14 +131,20 @@ public class CategoriaProductoController {
 			if (categoriaProductoDTODeletedResponse.getStatusCode() == HttpStatus.OK) {
 				return categoriaProductoDTODeletedResponse;
 			} else {
-				String error = "HttpStatus=" + categoriaProductoDTODeletedResponse.getStatusCode() + " " + "categoriaProductoService.deleteById id=" + id;
-				logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + error);
+				String error = "HttpStatus=" + categoriaProductoDTODeletedResponse.getStatusCode() + " "
+						+ "categoriaProductoService.deleteById id=" + id;
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
 				throw new Exception(error);
 			}
 		} catch (Exception e) {
-			logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			logger.error(new Object() {
+			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			if (e.getMessage() != null && e.getMessage().contains("no encontrado")) {
+				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+			}
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
-		}			
+		}
 	}
 
 }

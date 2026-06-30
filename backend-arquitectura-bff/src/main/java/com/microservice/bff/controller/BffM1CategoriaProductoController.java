@@ -99,7 +99,7 @@ public class BffM1CategoriaProductoController {
 	}
 
 	@PutMapping("/update/{id}")
-	public ResponseEntity<CategoriaProductoDTO> update(@PathVariable Long id,
+	public ResponseEntity<?> update(@PathVariable Long id,
 			@RequestBody CategoriaProductoDTO categoriaProductoDTO) throws Exception {
 		logger.info("BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/update/{id}");
 
@@ -113,17 +113,20 @@ public class BffM1CategoriaProductoController {
 						+ "categoriaProductoService.update";
 				logger.error(new Object() {
 				}.getClass().getEnclosingMethod().getName() + " " + error);
-				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
 			}
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+			if (e.getMessage() != null && e.getMessage().contains("no encontrado")) {
+				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+			}
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
 		}
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<CategoriaProductoDTO> delete(@PathVariable Long id) throws Exception {
+	public ResponseEntity<?> delete(@PathVariable Long id) throws Exception {
 		logger.info("BffM1CategoriaProductoController /api/bff/microservicio1/CategoriaProducto/delete/{id}");
 
 		ResponseEntity<CategoriaProductoDTO> categoriaProductoDTODeletedResponse = null;
@@ -136,12 +139,15 @@ public class BffM1CategoriaProductoController {
 						+ "categoriaProductoService.delete";
 				logger.error(new Object() {
 				}.getClass().getEnclosingMethod().getName() + " " + error);
-				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
 			}
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+			if (e.getMessage() != null && e.getMessage().contains("no encontrado")) {
+				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+			}
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
 		}
 	}
 }

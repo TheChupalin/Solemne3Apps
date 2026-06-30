@@ -6,6 +6,8 @@ import com.microservice.bff.dto.CategoriaProductoDTO;
 import com.microservice.bff.dto.ProductoDTO;
 import com.microservice.bff.interfaces.IBffProductoService;
 
+import feign.FeignException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -104,8 +106,35 @@ public class BffProductoServiceImpl implements IBffProductoService {
 	public ResponseEntity<ProductoDTO> update(@PathVariable Long id, @RequestBody ProductoDTO productoDTO)
 			throws Exception {
 		logger.info("BFF ProductoServiceImpl update() id: " + id + " productoDTO: " + productoDTO);
+		ResponseEntity<ProductoDTO> productoDTOUpdatedResponse;
 		try {
-			return microServicio2Client.update(id, productoDTO);
+			if (productoDTO.getIdCategoria() == null) {
+				String error = "El campo idCategoria es obligatorio";
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
+				throw new Exception(error);
+			}
+
+			ResponseEntity<CategoriaProductoDTO> categoriaResponse = microServicio1Client
+					.findById(productoDTO.getIdCategoria());
+			if (categoriaResponse.getStatusCode() == HttpStatus.NO_CONTENT
+					|| categoriaResponse.getBody() == null) {
+				String error = "La categoria con id=" + productoDTO.getIdCategoria() + " no existe";
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
+				throw new Exception(error);
+			}
+
+			productoDTOUpdatedResponse = microServicio2Client.update(id, productoDTO);
+			if (productoDTOUpdatedResponse.getStatusCode() == HttpStatus.OK) {
+				return productoDTOUpdatedResponse;
+			} else {
+				String error = "HttpStatus=" + productoDTOUpdatedResponse.getStatusCode() + " "
+						+ "microServicio2Client.update id=" + id;
+				logger.error(new Object() {
+				}.getClass().getEnclosingMethod().getName() + " " + error);
+				throw new Exception(error);
+			}
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
@@ -118,6 +147,13 @@ public class BffProductoServiceImpl implements IBffProductoService {
 		logger.info("BFF ProductoServiceImpl deleteById() id: " + id);
 		try {
 			return microServicio2Client.deleteById(id);
+		} catch (FeignException e) {
+			logger.error(new Object() {
+			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			if (e.status() == HttpStatus.NOT_FOUND.value()) {
+				throw new Exception("Producto con id=" + id + " no encontrado");
+			}
+			throw new Exception(e.getMessage());
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());

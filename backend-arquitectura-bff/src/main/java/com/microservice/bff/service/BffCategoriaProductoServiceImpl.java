@@ -4,6 +4,8 @@ import com.microservice.bff.client.IBffMicroServicio1Client;
 import com.microservice.bff.dto.CategoriaProductoDTO;
 import com.microservice.bff.interfaces.IBffCategoriaProductoService;
 
+import feign.FeignException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -78,6 +80,13 @@ public class BffCategoriaProductoServiceImpl implements IBffCategoriaProductoSer
 				+ categoriaProductoDTO);
 		try {
 			return microServicio1Client.update(id, categoriaProductoDTO);
+		} catch (FeignException e) {
+			logger.error(new Object() {
+			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			if (e.status() == HttpStatus.NOT_FOUND.value()) {
+				throw new Exception("CategoriaProducto con id=" + id + " no encontrado");
+			}
+			throw new Exception(e.getMessage());
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
@@ -90,6 +99,13 @@ public class BffCategoriaProductoServiceImpl implements IBffCategoriaProductoSer
 		logger.info("BFF CategoriaProductoServiceImpl deleteById() id: " + id);
 		try {
 			return microServicio1Client.deleteById(id);
+		} catch (FeignException e) {
+			logger.error(new Object() {
+			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			if (e.status() == HttpStatus.NOT_FOUND.value()) {
+				throw new Exception("CategoriaProducto con id=" + id + " no encontrado");
+			}
+			throw new Exception(e.getMessage());
 		} catch (Exception e) {
 			logger.error(new Object() {
 			}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());

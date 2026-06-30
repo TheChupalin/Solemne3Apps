@@ -1404,3 +1404,956 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 2026-06-30 09:18:20.892  INFO 33240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
 2026-06-30 09:18:20.892  INFO 33240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
 2026-06-30 09:18:20.912  INFO 33240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:22:50.631  INFO 33240 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:24:20.488  INFO 33684 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 33684 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 09:24:20.490  INFO 33684 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 09:24:20.907  INFO 33684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 09:24:20.989  INFO 33684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2026-06-30 09:24:21.131  INFO 33684 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 09:24:21.409  INFO 33684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 09:24:21.417  INFO 33684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:24:21.418  INFO 33684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:24:21.530  INFO 33684 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:24:21.531  INFO 33684 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1011 ms
+2026-06-30 09:24:21.720  INFO 33684 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 09:24:21.788  INFO 33684 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 09:24:21.879  INFO 33684 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 09:24:21.959  INFO 33684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 09:24:22.064  INFO 33684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 09:24:22.072  INFO 33684 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 09:24:22.391  INFO 33684 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 09:24:22.395  INFO 33684 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 09:24:22.667  WARN 33684 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 09:24:23.204  INFO 33684 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:24:23.330  WARN 33684 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:24:23.429  INFO 33684 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:24:23.506  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:24:23.509  INFO 33684 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:24:23.540  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:24:23.540  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:24:23.540  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:24:23.541  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:24:23.541  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:24:23.541  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:24:23.541  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:24:23.868  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:24:23.871  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:24:23.871  INFO 33684 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:24:23.875  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782825863875 with initial instances count: 0
+2026-06-30 09:24:23.876  INFO 33684 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 09:24:23.876  INFO 33684 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782825863876, current=UP, previous=STARTING]
+2026-06-30 09:24:23.878  INFO 33684 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:da0314cd-6da1-48f5-a736-ab46cfa2ebea: registering service...
+2026-06-30 09:24:23.907  INFO 33684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 09:24:23.908  INFO 33684 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 09:24:23.942  INFO 33684 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:da0314cd-6da1-48f5-a736-ab46cfa2ebea - registration status: 204
+2026-06-30 09:24:23.953  INFO 33684 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.744 seconds (JVM running for 4.201)
+2026-06-30 09:24:53.873  INFO 33684 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:24:53.873  INFO 33684 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:24:53.873  INFO 33684 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:24:53.873  INFO 33684 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:24:53.875  INFO 33684 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:24:53.875  INFO 33684 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 09:24:53.875  INFO 33684 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:24:53.893  INFO 33684 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:25:24.240  INFO 33684 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:25:24.241  INFO 33684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:25:24.242  INFO 33684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 09:25:24.287  INFO 33684 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 09:25:24.287  INFO 33684 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-30 09:29:23.546  INFO 33684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:34:23.552  INFO 33684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:39:23.559  INFO 33684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:42:06.080  INFO 13480 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 13480 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 09:42:06.082  INFO 13480 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 09:42:06.493  INFO 13480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 09:42:06.572  INFO 13480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
+2026-06-30 09:42:06.708  INFO 13480 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 09:42:06.968  INFO 13480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 09:42:06.976  INFO 13480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:42:06.976  INFO 13480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:42:07.095  INFO 13480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:42:07.095  INFO 13480 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 980 ms
+2026-06-30 09:42:07.264  INFO 13480 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 09:42:07.314  INFO 13480 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 09:42:07.392  INFO 13480 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 09:42:07.480  INFO 13480 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 09:42:07.577  INFO 13480 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 09:42:07.584  INFO 13480 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 09:42:07.913  INFO 13480 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 09:42:07.921  INFO 13480 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 09:42:08.194  WARN 13480 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 09:42:08.791  INFO 13480 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:42:08.901  WARN 13480 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:42:08.995  INFO 13480 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:42:09.065  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:42:09.069  INFO 13480 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:42:09.089  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:42:09.090  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:42:09.090  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:42:09.090  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:42:09.090  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:42:09.091  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:42:09.091  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:42:09.385  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:42:09.387  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:42:09.389  INFO 13480 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:42:09.392  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782826929391 with initial instances count: 0
+2026-06-30 09:42:09.393  INFO 13480 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 09:42:09.393  INFO 13480 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782826929393, current=UP, previous=STARTING]
+2026-06-30 09:42:09.394  INFO 13480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:8fb9ab7f-fa68-45de-9259-c460c5191ab6: registering service...
+2026-06-30 09:42:09.429  INFO 13480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 09:42:09.429  INFO 13480 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 09:42:09.459  INFO 13480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:8fb9ab7f-fa68-45de-9259-c460c5191ab6 - registration status: 204
+2026-06-30 09:42:09.478  INFO 13480 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.68 seconds (JVM running for 4.07)
+2026-06-30 09:42:39.395  INFO 13480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:42:39.396  INFO 13480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:42:39.397  INFO 13480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:42:39.398  INFO 13480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:42:39.399  INFO 13480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:42:39.399  INFO 13480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 09:42:39.399  INFO 13480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:42:39.423  INFO 13480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:47:09.101  INFO 13480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:52:09.117  INFO 13480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:58:32.903  INFO 36800 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 36800 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 09:58:32.905  INFO 36800 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 09:58:33.384  INFO 36800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 09:58:33.462  INFO 36800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2026-06-30 09:58:33.602  INFO 36800 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 09:58:33.892  INFO 36800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 09:58:33.897  INFO 36800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:58:33.897  INFO 36800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:58:34.041  INFO 36800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:58:34.042  INFO 36800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1104 ms
+2026-06-30 09:58:34.231  INFO 36800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 09:58:34.282  INFO 36800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 09:58:34.372  INFO 36800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 09:58:34.434  INFO 36800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 09:58:34.541  INFO 36800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 09:58:34.548  INFO 36800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 09:58:34.875  INFO 36800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 09:58:34.879  INFO 36800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 09:58:35.114  WARN 36800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 09:58:35.727  INFO 36800 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:58:35.889  WARN 36800 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:58:36.001  INFO 36800 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:58:36.094  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:58:36.102  INFO 36800 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:58:36.129  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:58:36.130  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:58:36.130  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:58:36.130  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:58:36.130  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:58:36.130  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:58:36.130  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:58:36.426  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:58:36.428  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:58:36.430  INFO 36800 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:58:36.433  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782827916432 with initial instances count: 0
+2026-06-30 09:58:36.434  INFO 36800 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 09:58:36.435  INFO 36800 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782827916435, current=UP, previous=STARTING]
+2026-06-30 09:58:36.437  INFO 36800 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:15f4d75d-05ac-4438-8b62-cc712ff02754: registering service...
+2026-06-30 09:58:36.471  INFO 36800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 09:58:36.471  INFO 36800 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 09:58:36.502  INFO 36800 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:15f4d75d-05ac-4438-8b62-cc712ff02754 - registration status: 204
+2026-06-30 09:58:36.512  INFO 36800 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.901 seconds (JVM running for 4.384)
+2026-06-30 09:59:06.442  INFO 36800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:59:06.442  INFO 36800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:59:06.442  INFO 36800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:59:06.443  INFO 36800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:59:06.443  INFO 36800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:59:06.443  INFO 36800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 09:59:06.443  INFO 36800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:59:06.465  INFO 36800 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:59:56.312  INFO 36800 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:59:56.312  INFO 36800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:59:56.314  INFO 36800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-30 09:59:56.363  INFO 36800 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 09:59:56.364  INFO 36800 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:03:18.574  INFO 23576 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 23576 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 10:03:18.576  INFO 23576 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 10:03:19.012  INFO 23576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:03:19.088  INFO 23576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:03:19.224  INFO 23576 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 10:03:19.506  INFO 23576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 10:03:19.511  INFO 23576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:03:19.511  INFO 23576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:03:19.712  INFO 23576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:03:19.713  INFO 23576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1101 ms
+2026-06-30 10:03:19.933  INFO 23576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:03:19.991  INFO 23576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:03:20.079  INFO 23576 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:03:20.144  INFO 23576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:03:20.248  INFO 23576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:03:20.255  INFO 23576 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 10:03:20.557  INFO 23576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:03:20.561  INFO 23576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:03:20.843  WARN 23576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:03:21.512  INFO 23576 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:03:21.640  WARN 23576 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:03:21.730  INFO 23576 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:03:21.808  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:03:21.814  INFO 23576 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:03:21.843  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:03:21.843  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:03:21.843  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:03:21.843  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:03:21.844  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:03:21.844  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:03:21.844  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:03:22.175  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:03:22.177  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:03:22.178  INFO 23576 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:03:22.181  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782828202181 with initial instances count: 0
+2026-06-30 10:03:22.183  INFO 23576 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 10:03:22.183  INFO 23576 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782828202183, current=UP, previous=STARTING]
+2026-06-30 10:03:22.185  INFO 23576 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:573e8fbb-c0df-4d82-9cc2-850b6404f676: registering service...
+2026-06-30 10:03:22.219  INFO 23576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 10:03:22.219  INFO 23576 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 10:03:22.250  INFO 23576 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:573e8fbb-c0df-4d82-9cc2-850b6404f676 - registration status: 204
+2026-06-30 10:03:22.258  INFO 23576 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.954 seconds (JVM running for 4.34)
+2026-06-30 10:03:52.186  INFO 23576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:03:52.187  INFO 23576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:03:52.187  INFO 23576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:03:52.187  INFO 23576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:03:52.187  INFO 23576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:03:52.187  INFO 23576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:03:52.187  INFO 23576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:03:52.208  INFO 23576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:05:11.896  INFO 23576 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:05:11.897  INFO 23576 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:05:11.898  INFO 23576 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:05:11.936  INFO 23576 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:05:11.937  INFO 23576 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:06:49.190  INFO 23576 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:06:49.191  INFO 23576 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:06:49.224  INFO 23576 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:06:49.224  INFO 23576 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:06:53.451  INFO 23576 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:06:53.452  INFO 23576 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:06:53.468  INFO 23576 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:06:53.470  INFO 23576 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:08:07.976  INFO 23576 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:08:07.976  INFO 23576 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:08:21.857  INFO 23576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:08:34.604  INFO 23576 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/create
+2026-06-30 10:08:34.605  INFO 23576 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl create
+2026-06-30 10:13:18.814  INFO 23576 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:13:18.815  INFO 23576 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-30 10:13:21.874  INFO 23576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:14:57.972  INFO 36740 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 36740 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 10:14:57.974  INFO 36740 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 10:14:58.419  INFO 36740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:14:58.506  INFO 36740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:14:58.656  INFO 36740 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 10:14:58.934  INFO 36740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 10:14:58.940  INFO 36740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:14:58.940  INFO 36740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:14:59.075  INFO 36740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:14:59.075  INFO 36740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1066 ms
+2026-06-30 10:14:59.284  INFO 36740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:14:59.319  INFO 36740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:14:59.389  INFO 36740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:14:59.451  INFO 36740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:14:59.556  INFO 36740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:14:59.563  INFO 36740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 10:14:59.875  INFO 36740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:14:59.879  INFO 36740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:15:00.125  WARN 36740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:15:00.698  INFO 36740 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:15:00.809  WARN 36740 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:15:00.873  INFO 36740 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:15:00.908  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:15:00.913  INFO 36740 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:15:00.934  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:15:00.935  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:15:00.935  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:15:00.935  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:15:00.936  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:15:00.936  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:15:00.936  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:15:01.212  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:15:01.214  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:15:01.216  INFO 36740 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:15:01.219  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782828901218 with initial instances count: 0
+2026-06-30 10:15:01.220  INFO 36740 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 10:15:01.220  INFO 36740 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782828901220, current=UP, previous=STARTING]
+2026-06-30 10:15:01.221  INFO 36740 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:8fc8d5ed-231e-403e-809a-040a81a406c8: registering service...
+2026-06-30 10:15:01.245  INFO 36740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 10:15:01.246  INFO 36740 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 10:15:01.282  INFO 36740 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:8fc8d5ed-231e-403e-809a-040a81a406c8 - registration status: 204
+2026-06-30 10:15:01.285  INFO 36740 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.592 seconds (JVM running for 3.98)
+2026-06-30 10:15:31.221  INFO 36740 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:15:31.222  INFO 36740 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:15:31.223  INFO 36740 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:15:31.223  INFO 36740 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:15:31.224  INFO 36740 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:15:31.225  INFO 36740 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:15:31.225  INFO 36740 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:15:31.250  INFO 36740 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:15:49.299  INFO 36740 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:15:49.299  INFO 36740 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:15:49.300  INFO 36740 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-30 10:15:49.326  INFO 36740 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:15:49.326  INFO 36740 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:15:49.327  INFO 36740 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-30 10:15:49.327  INFO 36740 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-30 10:16:21.604  INFO 36740 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:16:21.604  INFO 36740 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:17:03.495  INFO 36740 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:17:03.496  INFO 36740 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:17:05.355  INFO 36740 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:17:05.355  INFO 36740 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-30 10:18:12.731  INFO 36740 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/delete/{id}
+2026-06-30 10:18:12.732  INFO 36740 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl deleteById
+2026-06-30 10:18:15.949  INFO 36740 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:18:15.949  INFO 36740 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-30 10:20:00.943  INFO 36740 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:22:47.360  INFO 36740 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:22:47.361  INFO 36740 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:22:52.961  INFO 36740 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:22:52.962  INFO 36740 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:23:50.172  INFO 36740 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:23:50.173  INFO 36740 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:24:02.956  INFO 36740 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:24:02.956  INFO 36740 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:24:44.387  INFO 36740 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:24:44.388  INFO 36740 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-30 10:24:54.737  INFO 36740 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findById/{id}
+2026-06-30 10:24:54.739  INFO 36740 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findbyId
+2026-06-30 10:25:00.955  INFO 36740 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:25:21.549  INFO 36740 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/create
+2026-06-30 10:25:21.549  INFO 36740 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl create
+2026-06-30 10:25:43.468  INFO 36740 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:25:43.469  INFO 36740 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:25:43.479 ERROR 36740 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:25:43.482 ERROR 36740 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:25:43.483 ERROR 36740 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:25:56.681  INFO 36740 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:25:56.682  INFO 36740 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:25:56.686 ERROR 36740 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:25:56.686 ERROR 36740 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:25:56.687 ERROR 36740 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:26:07.368  INFO 36740 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:26:07.368  INFO 36740 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:26:07.373 ERROR 36740 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:26:07.374 ERROR 36740 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:26:07.375 ERROR 36740 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=3 no encontrado
+2026-06-30 10:26:13.610  INFO 36740 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:26:13.611  INFO 36740 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:27:54.353  INFO 36740 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:27:54.354  INFO 36740 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:27:54.357 ERROR 36740 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:27:54.357 ERROR 36740 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:27:54.357 ERROR 36740 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:30:00.966  INFO 36740 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:32:31.419  INFO 31184 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 31184 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 10:32:31.421  INFO 31184 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 10:32:31.920  INFO 31184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:32:31.996  INFO 31184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:32:32.153  INFO 31184 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 10:32:32.427  INFO 31184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 10:32:32.434  INFO 31184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:32:32.434  INFO 31184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:32:32.560  INFO 31184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:32:32.561  INFO 31184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1098 ms
+2026-06-30 10:32:32.749  INFO 31184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:32:32.811  INFO 31184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:32:32.900  INFO 31184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:32:32.967  INFO 31184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:32:33.068  INFO 31184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:32:33.076  INFO 31184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 10:32:33.388  INFO 31184 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:32:33.392  INFO 31184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:32:33.620  WARN 31184 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:32:33.976  INFO 31184 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:32:34.072  WARN 31184 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:32:34.137  INFO 31184 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:32:34.188  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:32:34.194  INFO 31184 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:32:34.228  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:32:34.228  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:32:34.228  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:32:34.229  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:32:34.229  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:32:34.229  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:32:34.229  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:32:34.544  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:32:34.545  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:32:34.546  INFO 31184 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:32:34.549  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782829954548 with initial instances count: 0
+2026-06-30 10:32:34.550  INFO 31184 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 10:32:34.550  INFO 31184 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782829954550, current=UP, previous=STARTING]
+2026-06-30 10:32:34.552  INFO 31184 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:d0eb300b-6179-4c5e-8f3d-399806801a71: registering service...
+2026-06-30 10:32:34.575  INFO 31184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 10:32:34.576  INFO 31184 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 10:32:34.610  INFO 31184 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:d0eb300b-6179-4c5e-8f3d-399806801a71 - registration status: 204
+2026-06-30 10:32:34.623  INFO 31184 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.489 seconds (JVM running for 3.904)
+2026-06-30 10:33:04.551  INFO 31184 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:33:04.552  INFO 31184 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:33:04.553  INFO 31184 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:33:04.554  INFO 31184 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:33:04.554  INFO 31184 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:33:04.555  INFO 31184 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:33:04.556  INFO 31184 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:33:04.582  INFO 31184 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:33:39.941  INFO 31184 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:33:39.942  INFO 31184 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:33:39.943  INFO 31184 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:33:39.981  INFO 31184 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:39.981  INFO 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:40.033 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:40.035 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:40.037 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:41.219  INFO 31184 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:41.219  INFO 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:41.222 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:41.223 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:41.223 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:41.821  INFO 31184 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:41.822  INFO 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:41.827 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:41.828 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:41.828 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:42.366  INFO 31184 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:42.367  INFO 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:42.369 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:42.370 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:42.370 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:42.859  INFO 31184 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:42.860  INFO 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:42.864 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:42.865 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:42.865 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:43.552  INFO 31184 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:43.552  INFO 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:43.555 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:43.555 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:43.556 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:44.340  INFO 31184 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:44.341  INFO 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:44.345 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:44.345 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:44.345 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:44.819  INFO 31184 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:44.820  INFO 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:44.825 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:44.825 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:44.825 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:53.037  INFO 31184 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:53.038  INFO 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:53.042 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:53.042 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:53.043 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:53.927  INFO 31184 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:53.928  INFO 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:53.932 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:53.932 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:53.933 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:58.695  INFO 31184 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:33:58.695  INFO 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:33:58.698 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:58.698 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:33:58.698 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:05.545  INFO 31184 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:05.546  INFO 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:05.551 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:05.551 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:05.552 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.126  INFO 31184 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:06.127  INFO 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:06.129 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.130 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.130 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.552  INFO 31184 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:06.553  INFO 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:06.556 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.556 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.557 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.715  INFO 31184 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:06.715  INFO 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:06.718 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.718 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.718 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.881  INFO 31184 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:06.881  INFO 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:06.887 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.887 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:06.889 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.056  INFO 31184 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.056  INFO 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:07.058 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.059 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.059 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.211  INFO 31184 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.211  INFO 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:07.214 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.215 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.215 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.392  INFO 31184 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.393  INFO 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:07.395 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.395 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.395 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.538  INFO 31184 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.538  INFO 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:07.541 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.541 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.542 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.928  INFO 31184 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:07.928  INFO 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:07.931 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.931 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:07.932 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.083  INFO 31184 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.084  INFO 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:08.087 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.087 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.087 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.248  INFO 31184 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.248  INFO 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:08.250 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.251 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.251 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.448  INFO 31184 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.448  INFO 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:08.450 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.450 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.451 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.614  INFO 31184 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.615  INFO 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:08.617 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.618 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.618 ERROR 31184 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.796  INFO 31184 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:08.797  INFO 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:08.800 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.800 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:08.801 ERROR 31184 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:09.047  INFO 31184 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:09.048  INFO 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:09.051 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:09.051 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:09.052 ERROR 31184 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:09.225  INFO 31184 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:09.225  INFO 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:09.229 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:09.229 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:09.229 ERROR 31184 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.253  INFO 31184 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:10.254  INFO 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:10.257 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.258 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.258 ERROR 31184 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.425  INFO 31184 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:10.425  INFO 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:10.428 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.429 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.429 ERROR 31184 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.618  INFO 31184 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:10.618  INFO 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:10.621 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.621 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:10.622 ERROR 31184 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:30.949  INFO 31184 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:30.950  INFO 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:30.953 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:30.953 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:30.954 ERROR 31184 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:31.491  INFO 31184 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:31.491  INFO 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:31.493 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:31.494 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:31.494 ERROR 31184 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:31.647  INFO 31184 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:34:31.647  INFO 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:34:31.651 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:31.651 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:31.651 ERROR 31184 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:34:48.782  INFO 25224 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 25224 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 10:34:48.783  INFO 25224 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 10:34:49.187  INFO 25224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:34:49.270  INFO 25224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:34:49.403  INFO 25224 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 10:34:49.722  INFO 25224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 10:34:49.730  INFO 25224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:34:49.731  INFO 25224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:34:49.855  INFO 25224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:34:49.855  INFO 25224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2026-06-30 10:34:50.036  INFO 25224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:34:50.093  INFO 25224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:34:50.173  INFO 25224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:34:50.244  INFO 25224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:34:50.347  INFO 25224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:34:50.355  INFO 25224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 10:34:50.697  INFO 25224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:34:50.701  INFO 25224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:34:50.921  WARN 25224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:34:51.468  INFO 25224 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:34:51.578  WARN 25224 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:34:51.648  INFO 25224 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:34:51.753  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:34:51.755  INFO 25224 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:34:51.776  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:34:51.776  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:34:51.776  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:34:51.776  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:34:51.776  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:34:51.776  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:34:51.776  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:34:52.060  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:34:52.062  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:34:52.063  INFO 25224 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:34:52.066  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830092066 with initial instances count: 0
+2026-06-30 10:34:52.068  INFO 25224 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 10:34:52.068  INFO 25224 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830092068, current=UP, previous=STARTING]
+2026-06-30 10:34:52.069  INFO 25224 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:6750c184-5867-4538-b2f5-8232a165af60: registering service...
+2026-06-30 10:34:52.094  INFO 25224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 10:34:52.095  INFO 25224 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 10:34:52.134  INFO 25224 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:6750c184-5867-4538-b2f5-8232a165af60 - registration status: 204
+2026-06-30 10:34:52.140  INFO 25224 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.628 seconds (JVM running for 4.104)
+2026-06-30 10:35:22.076  INFO 25224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:35:22.076  INFO 25224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:35:22.076  INFO 25224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:35:22.077  INFO 25224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:35:22.077  INFO 25224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:35:22.077  INFO 25224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:35:22.077  INFO 25224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:35:22.099  INFO 25224 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:35:51.536  INFO 25224 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:35:51.536  INFO 25224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:35:51.537  INFO 25224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-30 10:35:51.575  INFO 25224 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:35:51.575  INFO 25224 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:35:51.612 ERROR 25224 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:35:51.613 ERROR 25224 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:35:51.615 ERROR 25224 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:35:55.296  INFO 25224 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:35:55.297  INFO 25224 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:35:55.301 ERROR 25224 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:35:55.301 ERROR 25224 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:35:55.301 ERROR 25224 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:35:55.958  INFO 25224 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:35:55.960  INFO 25224 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:35:55.962 ERROR 25224 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:35:55.963 ERROR 25224 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:35:55.963 ERROR 25224 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:37:18.185  INFO 28552 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 28552 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 10:37:18.186  INFO 28552 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 10:37:18.675  INFO 28552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:37:18.770  INFO 28552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:37:18.924  INFO 28552 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 10:37:19.227  INFO 28552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 10:37:19.232  INFO 28552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:37:19.232  INFO 28552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:37:19.365  INFO 28552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:37:19.366  INFO 28552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1143 ms
+2026-06-30 10:37:19.539  INFO 28552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:37:19.596  INFO 28552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:37:19.696  INFO 28552 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:37:19.810  INFO 28552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:37:19.913  INFO 28552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:37:19.921  INFO 28552 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 10:37:20.252  INFO 28552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:37:20.256  INFO 28552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:37:20.557  WARN 28552 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:37:21.241  INFO 28552 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:37:21.376  WARN 28552 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:37:21.467  INFO 28552 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:37:21.505  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:37:21.507  INFO 28552 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:37:21.524  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:37:21.524  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:37:21.526  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:37:21.526  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:37:21.526  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:37:21.526  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:37:21.527  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:37:21.817  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:37:21.818  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:37:21.820  INFO 28552 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:37:21.822  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830241822 with initial instances count: 0
+2026-06-30 10:37:21.823  INFO 28552 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 10:37:21.824  INFO 28552 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830241824, current=UP, previous=STARTING]
+2026-06-30 10:37:21.825  INFO 28552 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:ccfe6820-d205-48b9-8e7c-8f4a7f9c0276: registering service...
+2026-06-30 10:37:21.852  INFO 28552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 10:37:21.853  INFO 28552 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 10:37:21.889  INFO 28552 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:ccfe6820-d205-48b9-8e7c-8f4a7f9c0276 - registration status: 204
+2026-06-30 10:37:21.898  INFO 28552 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.991 seconds (JVM running for 4.448)
+2026-06-30 10:37:51.822  INFO 28552 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:37:51.823  INFO 28552 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:37:51.823  INFO 28552 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:37:51.825  INFO 28552 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:37:51.826  INFO 28552 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:37:51.826  INFO 28552 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:37:51.827  INFO 28552 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:37:51.855  INFO 28552 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:38:12.348  INFO 28552 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:38:12.348  INFO 28552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:38:12.349  INFO 28552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-30 10:38:12.403  INFO 28552 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:12.405  INFO 28552 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:12.456 ERROR 28552 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:12.457 ERROR 28552 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:12.461 ERROR 28552 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:13.601  INFO 28552 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:13.601  INFO 28552 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:13.606 ERROR 28552 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:13.607 ERROR 28552 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:13.607 ERROR 28552 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.111  INFO 28552 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.112  INFO 28552 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:14.114 ERROR 28552 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.115 ERROR 28552 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.115 ERROR 28552 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.308  INFO 28552 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.309  INFO 28552 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:14.313 ERROR 28552 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.313 ERROR 28552 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.313 ERROR 28552 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.504  INFO 28552 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.506  INFO 28552 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:14.512 ERROR 28552 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.512 ERROR 28552 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.512 ERROR 28552 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.674  INFO 28552 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.675  INFO 28552 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:14.678 ERROR 28552 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.679 ERROR 28552 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.679 ERROR 28552 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.868  INFO 28552 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.868  INFO 28552 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:14.873 ERROR 28552 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.873 ERROR 28552 --- [http-nio-8081-exec-7] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.875 ERROR 28552 --- [http-nio-8081-exec-7] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.991  INFO 28552 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:14.991  INFO 28552 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:14.994 ERROR 28552 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.995 ERROR 28552 --- [http-nio-8081-exec-8] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:14.995 ERROR 28552 --- [http-nio-8081-exec-8] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:29.876  INFO 28552 --- [http-nio-8081-exec-9] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 10:38:29.877  INFO 28552 --- [http-nio-8081-exec-9] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll
+2026-06-30 10:38:39.591  INFO 28552 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:39.592  INFO 28552 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:39.595 ERROR 28552 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:39.596 ERROR 28552 --- [http-nio-8081-exec-10] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:39.596 ERROR 28552 --- [http-nio-8081-exec-10] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:43.831  INFO 28552 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:43.831  INFO 28552 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:43.834 ERROR 28552 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:43.834 ERROR 28552 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:43.835 ERROR 28552 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.377  INFO 28552 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:44.377  INFO 28552 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:44.379 ERROR 28552 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.380 ERROR 28552 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.380 ERROR 28552 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.544  INFO 28552 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:44.544  INFO 28552 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:44.547 ERROR 28552 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.547 ERROR 28552 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.547 ERROR 28552 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.751  INFO 28552 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:44.751  INFO 28552 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:44.755 ERROR 28552 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.756 ERROR 28552 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:44.756 ERROR 28552 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:45.039  INFO 28552 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:45.039  INFO 28552 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:45.043 ERROR 28552 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:45.043 ERROR 28552 --- [http-nio-8081-exec-5] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:45.043 ERROR 28552 --- [http-nio-8081-exec-5] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:45.210  INFO 28552 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:38:45.211  INFO 28552 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:38:45.214 ERROR 28552 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:45.215 ERROR 28552 --- [http-nio-8081-exec-6] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:38:45.215 ERROR 28552 --- [http-nio-8081-exec-6] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:41:39.579  INFO 24516 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 24516 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 10:41:39.582  INFO 24516 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 10:41:40.062  INFO 24516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:41:40.139  INFO 24516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:41:40.280  INFO 24516 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 10:41:40.565  INFO 24516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 10:41:40.569  INFO 24516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:41:40.569  INFO 24516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:41:40.679  INFO 24516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:41:40.680  INFO 24516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1066 ms
+2026-06-30 10:41:40.948  INFO 24516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:41:40.987  INFO 24516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:41:41.085  INFO 24516 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:41:41.180  INFO 24516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:41:41.282  INFO 24516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:41:41.288  INFO 24516 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 10:41:41.607  INFO 24516 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:41:41.611  INFO 24516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:41:41.880  WARN 24516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:41:42.449  INFO 24516 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:41:42.565  WARN 24516 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:41:42.647  INFO 24516 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:41:42.732  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:41:42.737  INFO 24516 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:41:42.764  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:41:42.764  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:41:42.764  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:41:42.765  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:41:42.765  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:41:42.765  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:41:42.765  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:41:43.085  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:41:43.087  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:41:43.088  INFO 24516 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:41:43.091  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830503090 with initial instances count: 0
+2026-06-30 10:41:43.092  INFO 24516 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 10:41:43.093  INFO 24516 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830503093, current=UP, previous=STARTING]
+2026-06-30 10:41:43.094  INFO 24516 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:0de20d07-e3e4-45d8-a908-de41d2ad05d7: registering service...
+2026-06-30 10:41:43.123  INFO 24516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 10:41:43.124  INFO 24516 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 10:41:43.157  INFO 24516 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:0de20d07-e3e4-45d8-a908-de41d2ad05d7 - registration status: 204
+2026-06-30 10:41:43.170  INFO 24516 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.855 seconds (JVM running for 4.349)
+2026-06-30 10:42:13.096  INFO 24516 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:42:13.097  INFO 24516 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:42:13.097  INFO 24516 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:42:13.097  INFO 24516 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:42:13.097  INFO 24516 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:42:13.097  INFO 24516 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:42:13.098  INFO 24516 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:42:13.120  INFO 24516 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:43:14.272  INFO 24516 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:43:14.273  INFO 24516 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:43:14.274  INFO 24516 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:43:14.309  INFO 24516 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:43:14.310  INFO 24516 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:43:14.346 ERROR 24516 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:43:14.349 ERROR 24516 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:43:14.351 ERROR 24516 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:43:59.018  INFO 24516 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:43:59.018  INFO 24516 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:43:59.022 ERROR 24516 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:43:59.023 ERROR 24516 --- [http-nio-8081-exec-2] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:43:59.023 ERROR 24516 --- [http-nio-8081-exec-2] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:44:11.729  INFO 24516 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:44:11.730  INFO 24516 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:44:11.733 ERROR 24516 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:44:11.734 ERROR 24516 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:44:11.734 ERROR 24516 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:46:55.698  INFO 19824 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 19824 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 10:46:55.700  INFO 19824 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 10:46:56.210  INFO 19824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:46:56.285  INFO 19824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:46:56.413  INFO 19824 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 10:46:56.700  INFO 19824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 10:46:56.705  INFO 19824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:46:56.705  INFO 19824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:46:56.837  INFO 19824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:46:56.837  INFO 19824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1099 ms
+2026-06-30 10:46:57.118  INFO 19824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:46:57.151  INFO 19824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:46:57.238  INFO 19824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:46:57.322  INFO 19824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:46:57.422  INFO 19824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:46:57.428  INFO 19824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 10:46:57.759  INFO 19824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:46:57.763  INFO 19824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:46:58.044  WARN 19824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:46:58.658  INFO 19824 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:46:58.772  WARN 19824 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:46:58.861  INFO 19824 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:46:58.943  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:46:58.949  INFO 19824 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:46:58.971  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:46:58.971  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:46:58.971  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:46:58.971  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:46:58.971  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:46:58.971  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:46:58.971  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:46:59.299  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:46:59.300  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:46:59.302  INFO 19824 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:46:59.305  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830819304 with initial instances count: 0
+2026-06-30 10:46:59.306  INFO 19824 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 10:46:59.306  INFO 19824 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830819306, current=UP, previous=STARTING]
+2026-06-30 10:46:59.307  INFO 19824 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:abea1d74-2b86-439f-9e0a-2e918b307d69: registering service...
+2026-06-30 10:46:59.330  INFO 19824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 10:46:59.330  INFO 19824 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 10:46:59.367  INFO 19824 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:abea1d74-2b86-439f-9e0a-2e918b307d69 - registration status: 204
+2026-06-30 10:46:59.378  INFO 19824 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.951 seconds (JVM running for 4.35)
+2026-06-30 10:47:29.308  INFO 19824 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:47:29.309  INFO 19824 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:47:29.309  INFO 19824 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:47:29.309  INFO 19824 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:47:29.310  INFO 19824 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:47:29.310  INFO 19824 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:47:29.310  INFO 19824 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:47:29.336  INFO 19824 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:48:02.478  INFO 19824 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:48:02.479  INFO 19824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:48:02.480  INFO 19824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:48:02.530  INFO 19824 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:48:02.531  INFO 19824 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:48:02.574 ERROR 19824 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:48:02.576 ERROR 19824 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:48:02.580 ERROR 19824 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:50:56.466  INFO 32104 --- [main] c.m.microservicio1.Microservicio1        : Starting Microservicio1 using Java 17.0.11 on USS-CO-F309-011 with PID 32104 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio1)
+2026-06-30 10:50:56.468  INFO 32104 --- [main] c.m.microservicio1.Microservicio1        : No active profile set, falling back to default profiles: default
+2026-06-30 10:50:56.883  INFO 32104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:50:56.964  INFO 32104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:50:57.114  INFO 32104 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ac87677-6f0b-38f8-ad02-e75fdd9a074c
+2026-06-30 10:50:57.384  INFO 32104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-30 10:50:57.399  INFO 32104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:50:57.399  INFO 32104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:50:57.541  INFO 32104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:50:57.541  INFO 32104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1045 ms
+2026-06-30 10:50:57.712  INFO 32104 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:50:57.757  INFO 32104 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:50:57.828  INFO 32104 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:50:57.895  INFO 32104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:50:58.002  INFO 32104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:50:58.009  INFO 32104 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-30 10:50:58.340  INFO 32104 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:50:58.343  INFO 32104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:50:58.607  WARN 32104 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:50:59.112  INFO 32104 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:50:59.243  WARN 32104 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:50:59.309  INFO 32104 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:50:59.357  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:50:59.360  INFO 32104 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:50:59.378  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:50:59.379  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:50:59.379  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:50:59.379  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:50:59.379  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:50:59.379  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:50:59.379  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:50:59.666  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:50:59.668  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:50:59.669  INFO 32104 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:50:59.672  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782831059671 with initial instances count: 0
+2026-06-30 10:50:59.673  INFO 32104 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO1 with eureka with status UP
+2026-06-30 10:50:59.674  INFO 32104 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782831059674, current=UP, previous=STARTING]
+2026-06-30 10:50:59.675  INFO 32104 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:d3556f80-5674-43ca-908c-9a787adfc9c8: registering service...
+2026-06-30 10:50:59.701  INFO 32104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-30 10:50:59.701  INFO 32104 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-06-30 10:50:59.738  INFO 32104 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO1/microservicio1:d3556f80-5674-43ca-908c-9a787adfc9c8 - registration status: 204
+2026-06-30 10:50:59.744  INFO 32104 --- [main] c.m.microservicio1.Microservicio1        : Started Microservicio1 in 3.55 seconds (JVM running for 3.949)
+2026-06-30 10:51:29.672  INFO 32104 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:51:29.674  INFO 32104 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:51:29.674  INFO 32104 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:51:29.674  INFO 32104 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:51:29.674  INFO 32104 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:51:29.675  INFO 32104 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:51:29.675  INFO 32104 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:51:29.698  INFO 32104 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:51:56.091  INFO 32104 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:51:56.092  INFO 32104 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:51:56.095  INFO 32104 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-30 10:51:56.132  INFO 32104 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/update/{id}
+2026-06-30 10:51:56.133  INFO 32104 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl update
+2026-06-30 10:51:56.181 ERROR 32104 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:51:56.183 ERROR 32104 --- [http-nio-8081-exec-1] c.m.m.s.CategoriaProductoServiceImpl     : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:51:56.185 ERROR 32104 --- [http-nio-8081-exec-1] c.m.m.c.CategoriaProductoController      : update categoriaProductoRepository.findById id=5 no encontrado
+2026-06-30 10:55:59.385  INFO 32104 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 11:00:16.849  INFO 32104 --- [http-nio-8081-exec-3] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/delete/{id}
+2026-06-30 11:00:16.849  INFO 32104 --- [http-nio-8081-exec-3] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl deleteById
+2026-06-30 11:00:19.865  INFO 32104 --- [http-nio-8081-exec-4] c.m.m.c.CategoriaProductoController      : Micro1 CategoriaProductoController /api/microservicio1/CategoriaProducto/findAll
+2026-06-30 11:00:19.866  INFO 32104 --- [http-nio-8081-exec-4] c.m.m.s.CategoriaProductoServiceImpl     : Micro1 CategoriaProductoServiceImpl findAll

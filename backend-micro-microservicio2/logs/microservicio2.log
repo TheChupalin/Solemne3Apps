@@ -1073,3 +1073,658 @@ Caused by: org.postgresql.util.PSQLException: ERROR: error de sintaxis en o cerc
 2026-06-30 09:18:55.794  INFO 11432 --- [http-nio-auto-1-exec-2] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
 2026-06-30 09:18:59.952  INFO 11432 --- [http-nio-auto-1-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
 2026-06-30 09:18:59.953  INFO 11432 --- [http-nio-auto-1-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
+2026-06-30 09:21:36.702  INFO 11432 --- [http-nio-auto-1-exec-5] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 09:21:36.703  INFO 11432 --- [http-nio-auto-1-exec-5] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 09:21:52.205  INFO 11432 --- [http-nio-auto-1-exec-6] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
+2026-06-30 09:21:52.206  INFO 11432 --- [http-nio-auto-1-exec-6] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
+2026-06-30 09:21:59.925  INFO 11432 --- [http-nio-auto-1-exec-7] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
+2026-06-30 09:21:59.926  INFO 11432 --- [http-nio-auto-1-exec-7] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
+2026-06-30 09:24:28.608  INFO 28476 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 28476 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 09:24:28.611  INFO 28476 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 09:24:29.075  INFO 28476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 09:24:29.157  INFO 28476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2026-06-30 09:24:29.282  INFO 28476 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ea43fdb8-0a83-37a0-83f0-c1147f03043a
+2026-06-30 09:24:29.536  INFO 28476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 09:24:29.541  INFO 28476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:24:29.542  INFO 28476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:24:29.671  INFO 28476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:24:29.672  INFO 28476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1024 ms
+2026-06-30 09:24:29.905  INFO 28476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 09:24:29.964  INFO 28476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 09:24:30.066  INFO 28476 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 09:24:30.123  INFO 28476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 09:24:30.192  INFO 28476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 09:24:30.201  INFO 28476 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 09:24:30.530  INFO 28476 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 09:24:30.534  INFO 28476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 09:24:30.814  WARN 28476 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 09:24:31.317  INFO 28476 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:24:31.435  WARN 28476 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:24:31.518  INFO 28476 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:24:31.626  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:24:31.634  INFO 28476 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:24:31.665  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:24:31.665  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:24:31.665  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:24:31.665  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:24:31.665  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:24:31.665  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:24:31.666  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:24:31.934  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:24:31.937  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:24:31.939  INFO 28476 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:24:31.945  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782825871945 with initial instances count: 1
+2026-06-30 09:24:31.948  INFO 28476 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 09:24:31.949  INFO 28476 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782825871949, current=UP, previous=STARTING]
+2026-06-30 09:24:31.952  INFO 28476 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:8803b33c-5550-4431-985e-880fe7a067c3: registering service...
+2026-06-30 09:24:31.986  INFO 28476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 09:24:31.987  INFO 28476 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 09:24:31.995  INFO 28476 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:8803b33c-5550-4431-985e-880fe7a067c3 - registration status: 204
+2026-06-30 09:24:32.036  INFO 28476 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.711 seconds (JVM running for 4.363)
+2026-06-30 09:26:01.566  INFO 28476 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:26:01.566  INFO 28476 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:26:01.568  INFO 28476 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-30 09:26:01.594  INFO 28476 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 09:26:01.595  INFO 28476 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 09:29:31.668  INFO 28476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:34:31.673  INFO 28476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:36:31.951  INFO 28476 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
+2026-06-30 09:36:31.952  INFO 28476 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
+2026-06-30 09:39:31.676  INFO 28476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:42:12.174  INFO 23112 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 23112 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 09:42:12.176  INFO 23112 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 09:42:12.644  INFO 23112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 09:42:12.725  INFO 23112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2026-06-30 09:42:12.892  INFO 23112 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ea43fdb8-0a83-37a0-83f0-c1147f03043a
+2026-06-30 09:42:13.177  INFO 23112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 09:42:13.183  INFO 23112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:42:13.183  INFO 23112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:42:13.326  INFO 23112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:42:13.327  INFO 23112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1106 ms
+2026-06-30 09:42:13.574  INFO 23112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 09:42:13.652  INFO 23112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 09:42:13.737  INFO 23112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 09:42:13.793  INFO 23112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 09:42:13.849  INFO 23112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 09:42:13.858  INFO 23112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 09:42:14.192  INFO 23112 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 09:42:14.196  INFO 23112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 09:42:14.500  WARN 23112 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 09:42:14.920  INFO 23112 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:42:15.068  WARN 23112 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:42:15.163  INFO 23112 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:42:15.227  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:42:15.231  INFO 23112 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:42:15.246  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:42:15.247  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:42:15.247  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:42:15.247  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:42:15.247  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:42:15.248  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:42:15.248  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:42:15.495  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:42:15.497  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:42:15.499  INFO 23112 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:42:15.502  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782826935501 with initial instances count: 0
+2026-06-30 09:42:15.503  INFO 23112 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 09:42:15.504  INFO 23112 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782826935504, current=UP, previous=STARTING]
+2026-06-30 09:42:15.505  INFO 23112 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:54e55a4e-8122-43cd-8cfe-33ebf1ef24b6: registering service...
+2026-06-30 09:42:15.544  INFO 23112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 09:42:15.545  INFO 23112 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 09:42:15.548  INFO 23112 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:54e55a4e-8122-43cd-8cfe-33ebf1ef24b6 - registration status: 204
+2026-06-30 09:42:15.590  INFO 23112 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.691 seconds (JVM running for 4.403)
+2026-06-30 09:42:45.509  INFO 23112 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:42:45.509  INFO 23112 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:42:45.509  INFO 23112 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:42:45.510  INFO 23112 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:42:45.510  INFO 23112 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:42:45.510  INFO 23112 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 09:42:45.510  INFO 23112 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:42:45.535  INFO 23112 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:43:08.472  INFO 23112 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:43:08.473  INFO 23112 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:43:08.474  INFO 23112 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 09:43:08.504  INFO 23112 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
+2026-06-30 09:43:08.504  INFO 23112 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
+2026-06-30 09:44:13.703  INFO 23112 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
+2026-06-30 09:44:13.703  INFO 23112 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
+2026-06-30 09:44:48.740  INFO 23112 --- [http-nio-8082-exec-4] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 09:44:48.741  INFO 23112 --- [http-nio-8082-exec-4] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 09:44:57.750  INFO 23112 --- [http-nio-8082-exec-6] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
+2026-06-30 09:44:57.750  INFO 23112 --- [http-nio-8082-exec-6] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
+2026-06-30 09:45:40.362  WARN 23112 --- [http-nio-8082-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+2026-06-30 09:45:44.628  INFO 23112 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 09:45:44.629  INFO 23112 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 09:45:44.648  WARN 23112 --- [http-nio-8082-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2026-06-30 09:45:44.648 ERROR 23112 --- [http-nio-8082-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: llave duplicada viola restricción de unicidad «producto_pkey»
+  Detail: Ya existe la llave (id)=(1).
+2026-06-30 09:45:44.657 ERROR 23112 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : create could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2026-06-30 09:45:44.659 ERROR 23112 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : create could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2026-06-30 09:45:54.772  INFO 23112 --- [http-nio-8082-exec-2] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 09:45:54.773  INFO 23112 --- [http-nio-8082-exec-2] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 09:45:54.775  WARN 23112 --- [http-nio-8082-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2026-06-30 09:45:54.775 ERROR 23112 --- [http-nio-8082-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: llave duplicada viola restricción de unicidad «producto_pkey»
+  Detail: Ya existe la llave (id)=(2).
+2026-06-30 09:45:54.777 ERROR 23112 --- [http-nio-8082-exec-2] c.m.m.service.ProductoServiceImpl        : create could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2026-06-30 09:45:54.777 ERROR 23112 --- [http-nio-8082-exec-2] c.m.m.controller.ProductoController      : create could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2026-06-30 09:45:57.283  INFO 23112 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 09:45:57.284  INFO 23112 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 09:45:57.289  WARN 23112 --- [http-nio-8082-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2026-06-30 09:45:57.289 ERROR 23112 --- [http-nio-8082-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: llave duplicada viola restricción de unicidad «producto_pkey»
+  Detail: Ya existe la llave (id)=(3).
+2026-06-30 09:45:57.290 ERROR 23112 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : create could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2026-06-30 09:45:57.290 ERROR 23112 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : create could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2026-06-30 09:46:06.196  INFO 23112 --- [http-nio-8082-exec-4] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 09:46:06.197  INFO 23112 --- [http-nio-8082-exec-4] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 09:46:11.910  INFO 23112 --- [http-nio-8082-exec-5] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 09:46:11.912  INFO 23112 --- [http-nio-8082-exec-5] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 09:46:11.914  WARN 23112 --- [http-nio-8082-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2026-06-30 09:46:11.915 ERROR 23112 --- [http-nio-8082-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: llave duplicada viola restricción de unicidad «producto_pkey»
+  Detail: Ya existe la llave (id)=(4).
+2026-06-30 09:46:11.916 ERROR 23112 --- [http-nio-8082-exec-5] c.m.m.service.ProductoServiceImpl        : create could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2026-06-30 09:46:11.916 ERROR 23112 --- [http-nio-8082-exec-5] c.m.m.controller.ProductoController      : create could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2026-06-30 09:46:13.068  INFO 23112 --- [http-nio-8082-exec-6] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 09:46:13.068  INFO 23112 --- [http-nio-8082-exec-6] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 09:47:04.876  INFO 23112 --- [http-nio-8082-exec-8] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 09:47:04.877  INFO 23112 --- [http-nio-8082-exec-8] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 09:47:15.251  INFO 23112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:47:30.252  INFO 23112 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 09:47:30.253  INFO 23112 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 09:51:20.717  INFO 23112 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/delete/{id}
+2026-06-30 09:51:20.718  INFO 23112 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl deleteById
+2026-06-30 09:51:24.469  INFO 23112 --- [http-nio-8082-exec-4] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 09:51:24.469  INFO 23112 --- [http-nio-8082-exec-4] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 09:52:15.263  INFO 23112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:58:41.597  INFO 29376 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 29376 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 09:58:41.599  INFO 29376 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 09:58:42.009  INFO 29376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 09:58:42.094  INFO 29376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2026-06-30 09:58:42.247  INFO 29376 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ea43fdb8-0a83-37a0-83f0-c1147f03043a
+2026-06-30 09:58:42.545  INFO 29376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 09:58:42.550  INFO 29376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:58:42.550  INFO 29376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:58:42.664  INFO 29376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:58:42.664  INFO 29376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1028 ms
+2026-06-30 09:58:42.870  INFO 29376 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 09:58:42.928  INFO 29376 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 09:58:43.035  INFO 29376 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 09:58:43.108  INFO 29376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 09:58:43.197  INFO 29376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 09:58:43.208  INFO 29376 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 09:58:43.552  INFO 29376 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 09:58:43.556  INFO 29376 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 09:58:43.846  WARN 29376 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 09:58:44.520  INFO 29376 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:58:44.676  WARN 29376 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:58:44.769  INFO 29376 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:58:44.816  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:58:44.819  INFO 29376 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:58:44.834  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:58:44.835  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:58:44.835  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:58:44.835  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:58:44.835  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:58:44.835  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:58:44.836  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:58:45.051  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:58:45.052  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:58:45.054  INFO 29376 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:58:45.057  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782827925057 with initial instances count: 0
+2026-06-30 09:58:45.059  INFO 29376 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 09:58:45.059  INFO 29376 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782827925059, current=UP, previous=STARTING]
+2026-06-30 09:58:45.061  INFO 29376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:295dd555-6d0e-476f-8bdf-1d6f09a7cf6f: registering service...
+2026-06-30 09:58:45.094  INFO 29376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 09:58:45.095  INFO 29376 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 09:58:45.097  INFO 29376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:295dd555-6d0e-476f-8bdf-1d6f09a7cf6f - registration status: 204
+2026-06-30 09:58:45.136  INFO 29376 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.795 seconds (JVM running for 4.398)
+2026-06-30 09:59:07.923  INFO 29376 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:59:07.924  INFO 29376 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:59:07.925  INFO 29376 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 09:59:07.964  INFO 29376 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 09:59:07.964  INFO 29376 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 09:59:15.068  INFO 29376 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:59:15.069  INFO 29376 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:59:15.070  INFO 29376 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:59:15.070  INFO 29376 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:59:15.071  INFO 29376 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:59:15.071  INFO 29376 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 09:59:15.072  INFO 29376 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:59:15.100  INFO 29376 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:59:40.348  INFO 29376 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 09:59:40.349  INFO 29376 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 10:00:05.280  INFO 29376 --- [http-nio-8082-exec-4] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 10:00:05.281  INFO 29376 --- [http-nio-8082-exec-4] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 10:00:10.815  INFO 29376 --- [http-nio-8082-exec-6] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 10:00:10.816  INFO 29376 --- [http-nio-8082-exec-6] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 10:03:32.173  INFO 26224 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 26224 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 10:03:32.175  INFO 26224 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 10:03:32.593  INFO 26224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:03:32.681  INFO 26224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:03:32.837  INFO 26224 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3bb0ad5-226a-3e74-9ef5-9ddf6274231e
+2026-06-30 10:03:33.094  INFO 26224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 10:03:33.101  INFO 26224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:03:33.101  INFO 26224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:03:33.210  INFO 26224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:03:33.210  INFO 26224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1002 ms
+2026-06-30 10:03:33.449  INFO 26224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:03:33.498  INFO 26224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:03:33.604  INFO 26224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:03:33.665  INFO 26224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:03:33.748  INFO 26224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:03:33.757  INFO 26224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 10:03:34.106  INFO 26224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:03:34.111  INFO 26224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:03:34.451  WARN 26224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:03:34.575  INFO 26224 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:03:35.177  INFO 26224 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:03:35.272  WARN 26224 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:03:35.341  INFO 26224 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:03:35.383  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:03:35.388  INFO 26224 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:03:35.404  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:03:35.404  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:03:35.405  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:03:35.405  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:03:35.405  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:03:35.405  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:03:35.405  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:03:35.627  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:03:35.629  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:03:35.630  INFO 26224 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:03:35.633  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782828215632 with initial instances count: 1
+2026-06-30 10:03:35.634  INFO 26224 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 10:03:35.635  INFO 26224 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782828215635, current=UP, previous=STARTING]
+2026-06-30 10:03:35.635  INFO 26224 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:b14fff18-2f72-486f-9139-a25b79832677: registering service...
+2026-06-30 10:03:35.663  INFO 26224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 10:03:35.663  INFO 26224 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:b14fff18-2f72-486f-9139-a25b79832677 - registration status: 204
+2026-06-30 10:03:35.664  INFO 26224 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 10:03:35.709  INFO 26224 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.806 seconds (JVM running for 4.48)
+2026-06-30 10:04:52.767  INFO 26224 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:04:52.768  INFO 26224 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:04:52.769  INFO 26224 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:04:52.794  INFO 26224 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 10:04:52.795  INFO 26224 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 10:05:02.987  INFO 26224 --- [http-nio-8082-exec-2] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/delete/{id}
+2026-06-30 10:05:02.987  INFO 26224 --- [http-nio-8082-exec-2] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl deleteById
+2026-06-30 10:05:06.685  INFO 26224 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/delete/{id}
+2026-06-30 10:05:06.685  INFO 26224 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl deleteById
+2026-06-30 10:05:11.750  INFO 26224 --- [http-nio-8082-exec-4] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 10:05:11.750  INFO 26224 --- [http-nio-8082-exec-4] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 10:05:11.995 ERROR 26224 --- [http-nio-8082-exec-4] c.m.m.service.ProductoServiceImpl        : create La categoria con id=99 no existe
+2026-06-30 10:05:11.997 ERROR 26224 --- [http-nio-8082-exec-4] c.m.m.service.ProductoServiceImpl        : create La categoria con id=99 no existe
+2026-06-30 10:05:11.999 ERROR 26224 --- [http-nio-8082-exec-4] c.m.m.controller.ProductoController      : create La categoria con id=99 no existe
+2026-06-30 10:06:25.058  INFO 26224 --- [http-nio-8082-exec-6] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 10:06:25.058  INFO 26224 --- [http-nio-8082-exec-6] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 10:06:49.218  INFO 26224 --- [http-nio-8082-exec-7] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/update/{id}
+2026-06-30 10:06:49.218  INFO 26224 --- [http-nio-8082-exec-7] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl update
+2026-06-30 10:06:53.463  INFO 26224 --- [http-nio-8082-exec-8] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/update/{id}
+2026-06-30 10:06:53.463  INFO 26224 --- [http-nio-8082-exec-8] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl update
+2026-06-30 10:08:35.417  INFO 26224 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:13:04.451  INFO 26224 --- [http-nio-8082-exec-10] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 10:13:04.451  INFO 26224 --- [http-nio-8082-exec-10] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 10:13:35.424  INFO 26224 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:15:03.958  INFO 36364 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 36364 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 10:15:03.960  INFO 36364 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 10:15:04.385  INFO 36364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:15:04.473  INFO 36364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:15:04.610  INFO 36364 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3bb0ad5-226a-3e74-9ef5-9ddf6274231e
+2026-06-30 10:15:04.889  INFO 36364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 10:15:04.895  INFO 36364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:15:04.895  INFO 36364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:15:05.037  INFO 36364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:15:05.037  INFO 36364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1045 ms
+2026-06-30 10:15:05.234  INFO 36364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:15:05.303  INFO 36364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:15:05.402  INFO 36364 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:15:05.469  INFO 36364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:15:05.551  INFO 36364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:15:05.560  INFO 36364 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 10:15:05.877  INFO 36364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:15:05.883  INFO 36364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:15:06.171  WARN 36364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:15:06.297  INFO 36364 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:15:06.883  INFO 36364 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:15:06.976  WARN 36364 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:15:07.023  INFO 36364 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:15:07.045  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:15:07.050  INFO 36364 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:15:07.064  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:15:07.064  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:15:07.064  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:15:07.064  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:15:07.065  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:15:07.067  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:15:07.067  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:15:07.303  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:15:07.305  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:15:07.306  INFO 36364 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:15:07.309  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782828907309 with initial instances count: 0
+2026-06-30 10:15:07.310  INFO 36364 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 10:15:07.312  INFO 36364 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782828907312, current=UP, previous=STARTING]
+2026-06-30 10:15:07.313  INFO 36364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:93a99716-f29b-4360-b878-8d97138f5b20: registering service...
+2026-06-30 10:15:07.340  INFO 36364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 10:15:07.341  INFO 36364 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 10:15:07.342  INFO 36364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:93a99716-f29b-4360-b878-8d97138f5b20 - registration status: 204
+2026-06-30 10:15:07.388  INFO 36364 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.691 seconds (JVM running for 4.305)
+2026-06-30 10:15:37.319  INFO 36364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:15:37.320  INFO 36364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:15:37.320  INFO 36364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:15:37.320  INFO 36364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:15:37.320  INFO 36364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:15:37.320  INFO 36364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:15:37.320  INFO 36364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:15:37.340  INFO 36364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:18:51.538  INFO 36364 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 10:18:51.539  INFO 36364 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 10:18:51.540  INFO 36364 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 10:18:51.559  INFO 36364 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 10:18:51.559  INFO 36364 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 10:20:07.081  INFO 36364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:22:43.496  WARN 36364 --- [http-nio-8082-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+2026-06-30 10:22:47.261  INFO 36364 --- [http-nio-8082-exec-5] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 10:22:47.262  INFO 36364 --- [http-nio-8082-exec-5] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 10:22:52.954  INFO 36364 --- [http-nio-8082-exec-7] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/create
+2026-06-30 10:22:52.956  INFO 36364 --- [http-nio-8082-exec-7] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl create
+2026-06-30 10:22:52.968 ERROR 36364 --- [http-nio-8082-exec-7] c.m.m.service.ProductoServiceImpl        : create La categoria con id=99 no existe
+2026-06-30 10:22:52.970 ERROR 36364 --- [http-nio-8082-exec-7] c.m.m.service.ProductoServiceImpl        : create La categoria con id=99 no existe
+2026-06-30 10:22:52.972 ERROR 36364 --- [http-nio-8082-exec-7] c.m.m.controller.ProductoController      : create La categoria con id=99 no existe
+2026-06-30 10:23:14.570  INFO 36364 --- [http-nio-8082-exec-8] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 10:23:14.571  INFO 36364 --- [http-nio-8082-exec-8] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 10:23:43.378  WARN 36364 --- [http-nio-8082-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:23:45.152  WARN 36364 --- [http-nio-8082-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2026-06-30 10:23:50.159  INFO 36364 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/update/{id}
+2026-06-30 10:23:50.159  INFO 36364 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl update
+2026-06-30 10:23:50.180 ERROR 36364 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : update La categoria con id=99 no existe
+2026-06-30 10:23:50.181 ERROR 36364 --- [http-nio-8082-exec-3] c.m.m.service.ProductoServiceImpl        : update La categoria con id=99 no existe
+2026-06-30 10:23:50.183 ERROR 36364 --- [http-nio-8082-exec-3] c.m.m.controller.ProductoController      : update La categoria con id=99 no existe
+2026-06-30 10:24:02.951  INFO 36364 --- [http-nio-8082-exec-4] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/update/{id}
+2026-06-30 10:24:02.952  INFO 36364 --- [http-nio-8082-exec-4] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl update
+2026-06-30 10:24:12.426  WARN 36364 --- [http-nio-8082-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2026-06-30 10:24:15.829  INFO 36364 --- [http-nio-8082-exec-9] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/delete/{id}
+2026-06-30 10:24:15.830  INFO 36364 --- [http-nio-8082-exec-9] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl deleteById
+2026-06-30 10:24:19.023  INFO 36364 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 10:24:19.024  INFO 36364 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 10:25:07.096  INFO 36364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:30:07.108  INFO 36364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:32:36.846  INFO 6696 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 6696 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 10:32:36.847  INFO 6696 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 10:32:37.312  INFO 6696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:32:37.392  INFO 6696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:32:37.519  INFO 6696 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3bb0ad5-226a-3e74-9ef5-9ddf6274231e
+2026-06-30 10:32:37.810  INFO 6696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 10:32:37.816  INFO 6696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:32:37.816  INFO 6696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:32:37.974  INFO 6696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:32:37.974  INFO 6696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1092 ms
+2026-06-30 10:32:38.192  INFO 6696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:32:38.258  INFO 6696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:32:38.358  INFO 6696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:32:38.413  INFO 6696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:32:38.475  INFO 6696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:32:38.483  INFO 6696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 10:32:38.796  INFO 6696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:32:38.800  INFO 6696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:32:39.184  WARN 6696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:32:39.258  INFO 6696 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:32:39.729  INFO 6696 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:32:39.835  WARN 6696 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:32:39.875  INFO 6696 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:32:39.902  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:32:39.907  INFO 6696 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:32:39.922  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:32:39.922  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:32:39.923  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:32:39.923  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:32:39.923  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:32:39.923  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:32:39.923  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:32:40.148  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:32:40.149  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:32:40.151  INFO 6696 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:32:40.153  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782829960153 with initial instances count: 0
+2026-06-30 10:32:40.154  INFO 6696 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 10:32:40.155  INFO 6696 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782829960155, current=UP, previous=STARTING]
+2026-06-30 10:32:40.156  INFO 6696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:7d9050e0-540e-4539-b49c-9be6925c0505: registering service...
+2026-06-30 10:32:40.174  INFO 6696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 10:32:40.174  INFO 6696 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 10:32:40.178  INFO 6696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:7d9050e0-540e-4539-b49c-9be6925c0505 - registration status: 204
+2026-06-30 10:32:40.212  INFO 6696 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.641 seconds (JVM running for 4.165)
+2026-06-30 10:33:10.155  INFO 6696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:33:10.156  INFO 6696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:33:10.156  INFO 6696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:33:10.157  INFO 6696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:33:10.157  INFO 6696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:33:10.157  INFO 6696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:33:10.158  INFO 6696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:33:10.185  INFO 6696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:34:54.914  INFO 9196 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 9196 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 10:34:54.915  INFO 9196 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 10:34:55.343  INFO 9196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:34:55.424  INFO 9196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:34:55.546  INFO 9196 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3bb0ad5-226a-3e74-9ef5-9ddf6274231e
+2026-06-30 10:34:55.853  INFO 9196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 10:34:55.861  INFO 9196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:34:55.861  INFO 9196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:34:56.040  INFO 9196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:34:56.041  INFO 9196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1089 ms
+2026-06-30 10:34:56.238  INFO 9196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:34:56.304  INFO 9196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:34:56.396  INFO 9196 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:34:56.450  INFO 9196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:34:56.549  INFO 9196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:34:56.558  INFO 9196 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 10:34:56.866  INFO 9196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:34:56.870  INFO 9196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:34:57.194  WARN 9196 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:34:57.286  INFO 9196 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:34:57.798  INFO 9196 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:34:57.898  WARN 9196 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:34:57.959  INFO 9196 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:34:58.002  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:34:58.006  INFO 9196 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:34:58.021  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:34:58.021  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:34:58.021  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:34:58.023  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:34:58.023  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:34:58.023  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:34:58.023  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:34:58.260  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:34:58.262  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:34:58.263  INFO 9196 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:34:58.266  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830098266 with initial instances count: 0
+2026-06-30 10:34:58.268  INFO 9196 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 10:34:58.268  INFO 9196 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830098268, current=UP, previous=STARTING]
+2026-06-30 10:34:58.269  INFO 9196 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:e1433ccb-6171-4228-8c46-82b6bc14ea14: registering service...
+2026-06-30 10:34:58.296  INFO 9196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 10:34:58.297  INFO 9196 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 10:34:58.298  INFO 9196 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:e1433ccb-6171-4228-8c46-82b6bc14ea14 - registration status: 204
+2026-06-30 10:34:58.343  INFO 9196 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.693 seconds (JVM running for 4.3)
+2026-06-30 10:35:28.274  INFO 9196 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:35:28.275  INFO 9196 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:35:28.275  INFO 9196 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:35:28.275  INFO 9196 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:35:28.275  INFO 9196 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:35:28.275  INFO 9196 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:35:28.276  INFO 9196 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:35:28.298  INFO 9196 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:37:28.697  INFO 22920 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 22920 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 10:37:28.699  INFO 22920 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 10:37:29.134  INFO 22920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:37:29.216  INFO 22920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:37:29.343  INFO 22920 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3bb0ad5-226a-3e74-9ef5-9ddf6274231e
+2026-06-30 10:37:29.601  INFO 22920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 10:37:29.608  INFO 22920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:37:29.608  INFO 22920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:37:29.739  INFO 22920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:37:29.739  INFO 22920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1009 ms
+2026-06-30 10:37:29.928  INFO 22920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:37:29.981  INFO 22920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:37:30.092  INFO 22920 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:37:30.162  INFO 22920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:37:30.221  INFO 22920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:37:30.232  INFO 22920 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 10:37:30.552  INFO 22920 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:37:30.556  INFO 22920 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:37:30.939  WARN 22920 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:37:31.083  INFO 22920 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:37:31.607  INFO 22920 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:37:31.746  WARN 22920 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:37:31.789  INFO 22920 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:37:31.819  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:37:31.822  INFO 22920 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:37:31.838  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:37:31.838  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:37:31.838  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:37:31.840  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:37:31.840  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:37:31.840  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:37:31.840  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:37:32.064  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:37:32.066  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:37:32.067  INFO 22920 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:37:32.070  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830252070 with initial instances count: 1
+2026-06-30 10:37:32.071  INFO 22920 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 10:37:32.072  INFO 22920 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830252072, current=UP, previous=STARTING]
+2026-06-30 10:37:32.073  INFO 22920 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:21422b58-0fda-40aa-981b-8a17dd436bcb: registering service...
+2026-06-30 10:37:32.111  INFO 22920 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:21422b58-0fda-40aa-981b-8a17dd436bcb - registration status: 204
+2026-06-30 10:37:32.114  INFO 22920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 10:37:32.114  INFO 22920 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 10:37:32.154  INFO 22920 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.712 seconds (JVM running for 4.286)
+2026-06-30 10:41:54.507  INFO 12080 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 12080 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 10:41:54.509  INFO 12080 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 10:41:54.927  INFO 12080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:41:55.028  INFO 12080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:41:55.192  INFO 12080 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3bb0ad5-226a-3e74-9ef5-9ddf6274231e
+2026-06-30 10:41:55.479  INFO 12080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 10:41:55.484  INFO 12080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:41:55.485  INFO 12080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:41:55.600  INFO 12080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:41:55.600  INFO 12080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1058 ms
+2026-06-30 10:41:55.869  INFO 12080 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:41:55.924  INFO 12080 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:41:56.013  INFO 12080 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:41:56.074  INFO 12080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:41:56.134  INFO 12080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:41:56.143  INFO 12080 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 10:41:56.476  INFO 12080 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:41:56.480  INFO 12080 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:41:56.845  WARN 12080 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:41:56.930  INFO 12080 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:41:57.546  INFO 12080 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:41:57.633  WARN 12080 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:41:57.694  INFO 12080 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:41:57.744  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:41:57.748  INFO 12080 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:41:57.768  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:41:57.768  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:41:57.768  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:41:57.768  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:41:57.768  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:41:57.768  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:41:57.769  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:41:57.985  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:41:57.988  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:41:57.990  INFO 12080 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:41:57.993  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830517992 with initial instances count: 0
+2026-06-30 10:41:57.994  INFO 12080 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 10:41:57.995  INFO 12080 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830517995, current=UP, previous=STARTING]
+2026-06-30 10:41:57.996  INFO 12080 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:8ddac58d-ee34-438b-8f50-456a4fe42e3a: registering service...
+2026-06-30 10:41:58.020  INFO 12080 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:8ddac58d-ee34-438b-8f50-456a4fe42e3a - registration status: 204
+2026-06-30 10:41:58.021  INFO 12080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 10:41:58.022  INFO 12080 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 10:41:58.061  INFO 12080 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.82 seconds (JVM running for 4.418)
+2026-06-30 10:42:27.988  INFO 12080 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:42:27.989  INFO 12080 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:42:27.989  INFO 12080 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:42:27.989  INFO 12080 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:42:27.989  INFO 12080 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:42:27.989  INFO 12080 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-30 10:42:27.989  INFO 12080 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:42:28.011  INFO 12080 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:47:04.816  INFO 18928 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 18928 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 10:47:04.818  INFO 18928 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 10:47:05.259  INFO 18928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:47:05.369  INFO 18928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:47:05.505  INFO 18928 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3bb0ad5-226a-3e74-9ef5-9ddf6274231e
+2026-06-30 10:47:05.791  INFO 18928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 10:47:05.798  INFO 18928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:47:05.798  INFO 18928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:47:05.991  INFO 18928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:47:05.991  INFO 18928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1140 ms
+2026-06-30 10:47:06.175  INFO 18928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:47:06.234  INFO 18928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:47:06.331  INFO 18928 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:47:06.392  INFO 18928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:47:06.453  INFO 18928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:47:06.464  INFO 18928 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 10:47:06.787  INFO 18928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:47:06.792  INFO 18928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:47:07.128  WARN 18928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:47:07.266  INFO 18928 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:47:07.910  INFO 18928 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:47:08.006  WARN 18928 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:47:08.061  INFO 18928 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:47:08.088  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:47:08.093  INFO 18928 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:47:08.107  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:47:08.107  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:47:08.108  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:47:08.108  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:47:08.108  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:47:08.108  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:47:08.108  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:47:08.319  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:47:08.321  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:47:08.322  INFO 18928 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:47:08.325  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782830828324 with initial instances count: 1
+2026-06-30 10:47:08.326  INFO 18928 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 10:47:08.326  INFO 18928 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782830828326, current=UP, previous=STARTING]
+2026-06-30 10:47:08.327  INFO 18928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:35cb71bb-1f2f-44f8-8b34-14660337fb9a: registering service...
+2026-06-30 10:47:08.343  INFO 18928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 10:47:08.343  INFO 18928 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 10:47:08.353  INFO 18928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:35cb71bb-1f2f-44f8-8b34-14660337fb9a - registration status: 204
+2026-06-30 10:47:08.380  INFO 18928 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.839 seconds (JVM running for 4.441)
+2026-06-30 10:51:03.227  INFO 22172 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 22172 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 10:51:03.230  INFO 22172 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 10:51:03.767  INFO 22172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 10:51:03.860  INFO 22172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2026-06-30 10:51:04.025  INFO 22172 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3bb0ad5-226a-3e74-9ef5-9ddf6274231e
+2026-06-30 10:51:04.326  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-06-30 10:51:04.331  INFO 22172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 10:51:04.331  INFO 22172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 10:51:04.482  INFO 22172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 10:51:04.482  INFO 22172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1211 ms
+2026-06-30 10:51:04.641  INFO 22172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 10:51:04.689  INFO 22172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 10:51:04.781  INFO 22172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 10:51:04.837  INFO 22172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 10:51:04.926  INFO 22172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 10:51:04.940  INFO 22172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 10:51:05.259  INFO 22172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 10:51:05.263  INFO 22172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 10:51:05.593  WARN 22172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 10:51:05.678  INFO 22172 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 10:51:06.146  INFO 22172 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 10:51:06.232  WARN 22172 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 10:51:06.285  INFO 22172 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 10:51:06.328  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 10:51:06.334  INFO 22172 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 10:51:06.365  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 10:51:06.365  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 10:51:06.365  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 10:51:06.366  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 10:51:06.366  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 10:51:06.366  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 10:51:06.366  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 10:51:06.613  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 10:51:06.615  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 10:51:06.617  INFO 22172 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 10:51:06.619  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782831066619 with initial instances count: 1
+2026-06-30 10:51:06.621  INFO 22172 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 10:51:06.621  INFO 22172 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782831066621, current=UP, previous=STARTING]
+2026-06-30 10:51:06.622  INFO 22172 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:a5cd829f-7cb5-4aa4-90a8-011f6d396f9d: registering service...
+2026-06-30 10:51:06.648  INFO 22172 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:a5cd829f-7cb5-4aa4-90a8-011f6d396f9d - registration status: 204
+2026-06-30 10:51:06.649  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-06-30 10:51:06.650  INFO 22172 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-30 10:51:06.689  INFO 22172 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.726 seconds (JVM running for 4.327)
