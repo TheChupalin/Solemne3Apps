@@ -919,3 +919,6 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-06-30T09:18:14.743-04:00  INFO 35676 --- [msvc-gateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
 2026-06-30T09:18:14.756-04:00  INFO 35676 --- [msvc-gateway] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-GATEWAY/10.200.20.102:msvc-gateway:8080 - registration status: 204
 2026-06-30T09:18:14.787-04:00  INFO 35676 --- [msvc-gateway] [main] c.m.gateway.GatewayApplication           : Started GatewayApplication in 2.96 seconds (process running for 3.451)
+2026-06-30T09:18:50.978-04:00  INFO 35676 --- [msvc-gateway] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30T09:18:50.979-04:00  INFO 35676 --- [msvc-gateway] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30T09:18:50.980-04:00  INFO 35676 --- [msvc-gateway] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
