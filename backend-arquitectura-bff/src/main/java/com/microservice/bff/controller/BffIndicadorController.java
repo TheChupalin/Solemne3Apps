@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.microservice.bff.dto.IndicadoresActualesDTO;
+import com.microservice.bff.dto.ProductoPrecioDolarDTO;
 import com.microservice.bff.dto.ProductoPrecioUfDTO;
 import com.microservice.bff.interfaces.IBffIndicadorService;
 
@@ -43,4 +45,44 @@ public class BffIndicadorController {
 		}
 	}
 
+	@GetMapping("/producto/{id}/precio-dolar")
+	public ResponseEntity<?> getPrecioProductoEnDolar(@PathVariable Long id) {
+		logger.info("BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-dolar id=" + id);
+		try {
+			ResponseEntity<ProductoPrecioDolarDTO> response = indicadorService.getPrecioProductoEnDolar(id);
+			if (response.getStatusCode() == HttpStatus.OK) {
+				return response;
+			} else {
+				String error = "HttpStatus=" + response.getStatusCode() + " indicadorService.getPrecioProductoEnDolar";
+				logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + error);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
+			}
+		} catch (Exception e) {
+			logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			if (e.getMessage() != null && e.getMessage().contains("no encontrado")) {
+				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+			}
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+		}
+	}
+
+	@GetMapping("/indicadores-actuales")
+	public ResponseEntity<?> getIndicadoresActuales() {
+		logger.info("BffIndicadorController GET /api/bff/indicadores/indicadores-actuales");
+		try {
+			ResponseEntity<IndicadoresActualesDTO> response = indicadorService.getIndicadoresActuales();
+			if (response.getStatusCode() == HttpStatus.OK) {
+				return response;
+			} else {
+				String error = "HttpStatus=" + response.getStatusCode() + " indicadorService.getIndicadoresActuales";
+				logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + error);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
+			}
+		} catch (Exception e) {
+			logger.error(new Object() {}.getClass().getEnclosingMethod().getName() + " " + e.getMessage());
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+		}
+	}
+
 }
+
