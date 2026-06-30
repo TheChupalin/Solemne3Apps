@@ -1022,3 +1022,54 @@ Caused by: org.postgresql.util.PSQLException: ERROR: error de sintaxis en o cerc
 2026-06-29 17:21:33.717  INFO 12400 --- [http-nio-8082-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
 2026-06-29 17:21:33.717  INFO 12400 --- [http-nio-8082-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
 2026-06-29 17:23:54.567  INFO 12400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:17:57.280  INFO 11432 --- [main] c.m.microservicio2.Microservicio2        : Starting Microservicio2 using Java 17.0.11 on USS-CO-F309-011 with PID 11432 (C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-micro-microservicio2)
+2026-06-30 09:17:57.283  INFO 11432 --- [main] c.m.microservicio2.Microservicio2        : No active profile set, falling back to default profiles: default
+2026-06-30 09:17:57.862  INFO 11432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-30 09:17:57.947  INFO 11432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2026-06-30 09:17:58.139  INFO 11432 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ea43fdb8-0a83-37a0-83f0-c1147f03043a
+2026-06-30 09:17:58.472  INFO 11432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2026-06-30 09:17:58.484  INFO 11432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:17:58.484  INFO 11432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:17:58.626  INFO 11432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:17:58.627  INFO 11432 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1295 ms
+2026-06-30 09:17:58.820  INFO 11432 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-30 09:17:58.873  INFO 11432 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2026-06-30 09:17:58.961  INFO 11432 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-30 09:17:59.020  INFO 11432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-30 09:17:59.085  INFO 11432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-30 09:17:59.098  INFO 11432 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-06-30 09:17:59.402  INFO 11432 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-06-30 09:17:59.406  INFO 11432 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-30 09:17:59.640  WARN 11432 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-30 09:18:00.129  INFO 11432 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:18:00.225  WARN 11432 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:18:00.300  INFO 11432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63507 (http) with context path ''
+2026-06-30 09:18:00.301  INFO 11432 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 63507
+2026-06-30 09:18:00.304  INFO 11432 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:18:00.324  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:18:00.327  INFO 11432 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:18:00.340  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:18:00.340  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:18:00.341  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:18:00.341  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:18:00.341  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:18:00.341  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:18:00.341  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:18:00.523  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:18:00.528  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:18:00.529  INFO 11432 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:18:00.533  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782825480532 with initial instances count: 1
+2026-06-30 09:18:00.534  INFO 11432 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICIO2 with eureka with status UP
+2026-06-30 09:18:00.535  INFO 11432 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782825480535, current=UP, previous=STARTING]
+2026-06-30 09:18:00.536  INFO 11432 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:a8717cb2-5577-4a1e-8003-62cf452920d6: registering service...
+2026-06-30 09:18:00.558  INFO 11432 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICIO2/microservicio2:a8717cb2-5577-4a1e-8003-62cf452920d6 - registration status: 204
+2026-06-30 09:18:00.578  INFO 11432 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.568 seconds (JVM running for 4.167)
+2026-06-30 09:18:51.426  INFO 11432 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:18:51.426  INFO 11432 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:18:51.427  INFO 11432 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-30 09:18:51.448  INFO 11432 --- [http-nio-auto-1-exec-1] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findAll
+2026-06-30 09:18:51.449  INFO 11432 --- [http-nio-auto-1-exec-1] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findAll
+2026-06-30 09:18:55.794  INFO 11432 --- [http-nio-auto-1-exec-2] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
+2026-06-30 09:18:55.794  INFO 11432 --- [http-nio-auto-1-exec-2] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId
+2026-06-30 09:18:59.952  INFO 11432 --- [http-nio-auto-1-exec-3] c.m.m.controller.ProductoController      : Micro2 ProductoController /api/microservicio2/Producto/findById/{id}
+2026-06-30 09:18:59.953  INFO 11432 --- [http-nio-auto-1-exec-3] c.m.m.service.ProductoServiceImpl        : Micro2 ProductoServiceImpl findbyId

@@ -775,3 +775,47 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-06-29 17:21:33.572  INFO 7928 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2026-06-29 17:21:33.591  INFO 7928 --- [http-nio-8083-exec-1] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-uf id=4
 2026-06-29 17:21:33.591  INFO 7928 --- [http-nio-8083-exec-1] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnUf() idProducto: 4
+2026-06-30 09:18:04.560  INFO 31504 --- [main] com.microservice.bff.BffApplication      : Starting BffApplication using Java 17.0.11 on USS-CO-F309-011 with PID 31504 (C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff\target\classes started by USS in C:\Users\USS\Desktop\Solemne3Apps\backend-arquitectura-bff)
+2026-06-30 09:18:04.562  INFO 31504 --- [main] com.microservice.bff.BffApplication      : No active profile set, falling back to default profiles: default
+2026-06-30 09:18:05.153  INFO 31504 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5286610c-4a77-3723-8bd0-5724e10d9b68
+2026-06-30 09:18:05.373  INFO 31504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2026-06-30 09:18:05.384  INFO 31504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-30 09:18:05.385  INFO 31504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2026-06-30 09:18:05.508  INFO 31504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-30 09:18:05.509  INFO 31504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 906 ms
+2026-06-30 09:18:05.678  INFO 31504 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio2' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 09:18:05.741  INFO 31504 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'microservicio1' URL not provided. Will try picking an instance via load-balancing.
+2026-06-30 09:18:06.029  INFO 31504 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-30 09:18:06.115  WARN 31504 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-30 09:18:06.228  INFO 31504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63532 (http) with context path ''
+2026-06-30 09:18:06.229  INFO 31504 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 63532
+2026-06-30 09:18:06.239  INFO 31504 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-30 09:18:06.283  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-30 09:18:06.294  INFO 31504 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-30 09:18:06.373  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-30 09:18:06.374  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-30 09:18:06.374  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-30 09:18:06.374  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-30 09:18:06.374  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-30 09:18:06.374  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-30 09:18:06.374  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-30 09:18:06.657  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-30 09:18:06.659  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-30 09:18:06.661  INFO 31504 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-30 09:18:06.665  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782825486665 with initial instances count: 1
+2026-06-30 09:18:06.667  INFO 31504 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BFF with eureka with status UP
+2026-06-30 09:18:06.667  INFO 31504 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782825486667, current=UP, previous=STARTING]
+2026-06-30 09:18:06.669  INFO 31504 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:bc29688a-1655-454f-9e39-f0d9e8e5ebe7: registering service...
+2026-06-30 09:18:06.705  INFO 31504 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BFF/BFF:bc29688a-1655-454f-9e39-f0d9e8e5ebe7 - registration status: 204
+2026-06-30 09:18:06.715  INFO 31504 --- [main] com.microservice.bff.BffApplication      : Started BffApplication in 2.488 seconds (JVM running for 2.864)
+2026-06-30 09:18:51.228  INFO 31504 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-30 09:18:51.228  INFO 31504 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-30 09:18:51.229  INFO 31504 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-30 09:18:51.253  INFO 31504 --- [http-nio-auto-1-exec-1] c.m.b.c.BffM2ProductoController          : BffM2ProductoController /api/bff/microservicio2/Producto/findAll
+2026-06-30 09:18:51.253  INFO 31504 --- [http-nio-auto-1-exec-1] c.m.bff.service.BffProductoServiceImpl   : BFF ProductoServiceImpl findAll()
+2026-06-30 09:18:55.784  INFO 31504 --- [http-nio-auto-1-exec-2] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-uf id=3
+2026-06-30 09:18:55.785  INFO 31504 --- [http-nio-auto-1-exec-2] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnUf() idProducto: 3
+2026-06-30 09:18:59.943  INFO 31504 --- [http-nio-auto-1-exec-3] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/producto/{id}/precio-dolar id=3
+2026-06-30 09:18:59.944  INFO 31504 --- [http-nio-auto-1-exec-3] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getPrecioProductoEnDolar() idProducto: 3
+2026-06-30 09:19:05.244  INFO 31504 --- [http-nio-auto-1-exec-4] c.m.b.controller.BffIndicadorController  : BffIndicadorController GET /api/bff/indicadores/indicadores-actuales
+2026-06-30 09:19:05.245  INFO 31504 --- [http-nio-auto-1-exec-4] c.m.bff.service.BffIndicadorServiceImpl  : BFF BffIndicadorServiceImpl getIndicadoresActuales()
