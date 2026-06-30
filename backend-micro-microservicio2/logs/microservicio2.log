@@ -1728,3 +1728,4 @@ Caused by: org.postgresql.util.PSQLException: ERROR: error de sintaxis en o cerc
 2026-06-30 10:51:06.649  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
 2026-06-30 10:51:06.650  INFO 22172 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
 2026-06-30 10:51:06.689  INFO 22172 --- [main] c.m.microservicio2.Microservicio2        : Started Microservicio2 in 3.726 seconds (JVM running for 4.327)
+2026-06-30 10:56:06.373  INFO 22172 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
